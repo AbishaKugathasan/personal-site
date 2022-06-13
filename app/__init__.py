@@ -38,7 +38,7 @@ pols = [
 def index():
 
     projs = [
-        Proj("Google Maps", "A project that resemble features of Google Maps. This project was divided into 4 "Milestones" that allowed further development of the map. These 4 milestones included: Implementation of functions that assisted in further milestones, Implementing and bettering the GUI, Implementation of Path-Finding Algorithms and Travelling-Salesman Algorithms.",
+        Proj("Google Maps", "A project that resemble features of Google Maps. This project was divided into 4 Milestones that allowed further development of the map. These 4 milestones included: Implementation of functions that assisted in further milestones, Implementing and bettering the GUI, Implementation of Path-Finding Algorithms and Travelling-Salesman Algorithms.",
              "https://google.com/", "https://github.com/"),
         Proj("Designing a Processor", "Design of a processor written in verilog, which supports LEDR and the push buttons. Processor is able to support instructions such as add, substract, move, move-top and branch. Quartus Prime software was used to implement this project in verilog. Processor was tested through test benches and ModelSim Simulations to ensure correctness.",
              "https://github.com/", "https://github.com/AbishaKugathasan/ECE243-Labs"),
