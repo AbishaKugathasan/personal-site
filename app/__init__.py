@@ -16,6 +16,8 @@ mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
 print(mydb)
 
 
+
+#project
 class Proj:
     def __init__(self, name, descrip, git, demo, img) -> None:
         self.name = name
