@@ -10,7 +10,7 @@ mydb.connect()
 mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"), 
     user = os.getenv("MYSQL_USER"), 
     password = os.getenv("MYSQL_PASSWORD"), 
-    host = os.getenv("138.197.128.185"), 
+    host = "138.197.128.185", 
     port = 3306
     )
 
