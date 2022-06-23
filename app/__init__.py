@@ -73,7 +73,7 @@ def index():
     ]
 
     exps = [
-        Exp("University of Toronto Robotics Association", ["point1", "point 2", "point 3"]),
+        Exp("University of Toronto Robotics Association", ["Designing and Testing of Robots to compete in Compeitions", "point 2", "point 3"]),
         Exp("MLH X Meta Fellowship", ["point1", "point 2", "point 3"]),
         Exp("Experience 3", ["point 1", "point 2", "point 3"]),
         Exp("Experience 4", ["point 1", "point 2", "point 3"])
@@ -104,3 +104,7 @@ def get_time_line_post():
 TimelinePost.select().order_by(TimelinePost.created_at.desc())
         ]
     }
+
+@app.route('/timeline')
+def timeline(): 
+    return render_template('timeline.html', title="Timeline")
