@@ -6,7 +6,7 @@ import datetime
 
 load_dotenv()
 app = Flask(__name__)
-mydb.connect()
+
 mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"), 
     user = os.getenv("MYSQL_USER"), 
     password = os.getenv("MYSQL_PASSWORD"), 
@@ -25,7 +25,7 @@ class TimelinePost(Model):
     class Meta: 
         database = mydb 
 
-
+mydb.connect()
 mydb.create_tables([TimelinePost])
 #project
 class Proj:
