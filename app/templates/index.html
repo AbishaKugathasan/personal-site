@@ -170,4 +170,21 @@
       <button type = "submit">Submit</button>
     </form>
 
+
+    <script> 
+      const form = document.getElementById('form'); 
+      form.addEventListener('submit', function(e) {
+              e.preventDefault()
+              //const payload = new FormData(form); 
+              //console.log([...payload]);
+              //Post the payload by using fetch 
+              fetch('http://138.197.128.185:5000/api/timeline_post', {
+                     method:'POST', 
+                     body:payload,
+              })
+              .then(res => res.json())
+              .then(data => console.log(data))
+          })
+      </script>
+
 </html>
