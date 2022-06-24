@@ -162,7 +162,20 @@
       </form>
     </div>
 
-  <!-- Form that accepts input to create timeline -->
+
+    <h1>The form method="post" attribute</h1>
+
+<form action="/app/templates/timeline.html" method="post" target="_blank">
+  <label for="Date">Date:</label>
+  <input type="text" id="Date" name="Date"><br><br>
+  <label for="Name">Name:</label>
+  <input type="text" id="Name" name="Name"><br><br>
+  <label for="Context">Context:</label>
+  <input type="text" id="Context" name="Context"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+  <!-- Form that accepts input to create timeline 
   <h1><a href="{{ url_for('timeline') }}"> My Timeline</a></h1>
     <form id = "form">
       <label for = "Date">Date: </label>
@@ -174,7 +187,7 @@
       <label for = "Context: ">Context: </label>
       <input type = "text" id = "Context"><br><br>
 
-
+-->
 <!-- COMMETNED OUT
       <input name = "Date:" type = "text"> 
       <input name = "Title:" type = "text"> 
