@@ -34,10 +34,10 @@
     const form = document.getElementById('form'); 
     form.addEventListener('submit', function(e) {
             e.preventDefault()
-            //const payload = new FormData(form); 
-            //console.log([...payload]);
+            const payload = new FormData(form); 
+            console.log([...payload]);
             //Post the payload by using fetch 
-            fetch('http://138.197.128.185:5000/api/timeline_post', {
+            fetch('http://localhost:5000/api/timeline_post', {
                    method:'POST', 
                    body:payload,
             })
