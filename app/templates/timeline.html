@@ -38,7 +38,7 @@
             const payload = new FormData(form); 
             console.log([...payload]);
             //Post the payload by using fetch 
-            fetch('http://localhost:5000/api/timeline_post', {
+            fetch('/api/timeline_post', {
                    method:'POST', 
                    body:payload,
             })
