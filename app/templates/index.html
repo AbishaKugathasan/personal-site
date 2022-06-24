@@ -162,14 +162,26 @@
       </form>
     </div>
 
+  <!-- Form that accepts input to create timeline -->
   <h1><a href="{{ url_for('timeline') }}"> My Timeline</a></h1>
     <form id = "form">
+      <label for = "Date">Date: </label>
+      <input type = "text" id = "Date"><br><br>
+
+      <label for = "Title: ">Title: </label>
+      <input type = "text" id = "Title"><br><br> 
+
+      <label for = "Context: ">Context: </label>
+      <input type = "text" id = "Context"><br><br>
+
+
+<!-- COMMETNED OUT
       <input name = "Date:" type = "text"> 
       <input name = "Title:" type = "text"> 
       <input name = "Context:" type = "text">
       <button type = "submit">Submit</button>
     </form>
-
+  -->
 
     <script> 
       const form = document.getElementById('form'); 
