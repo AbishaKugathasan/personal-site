@@ -38,7 +38,7 @@
       <input type="text" id="email" name="email"><br><br>
       <label for="content">Context:</label>
       <input type="text" id="content" name="content"><br><br>
-      <input type="submit" value="Submit">
+      <input type="submit" id = "user-name" onclick = "myFunction()" value="Submit">
     </form>
 
     <p> Name: </p>
@@ -58,9 +58,11 @@
               })
               .then(res => res.json())
               .then(data => console.log(data))
-              let name = document.getElementById("name").innerHTML;
-              document.getElementById("user-name").innerHTML = name;
           })
+
+      function myFunction(){
+        document.getElementById("user-name").innerHTML = "I have changed!";
+      }
 
     </script>
 
