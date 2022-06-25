@@ -33,37 +33,31 @@
     <h1>Timeline</h1>
     <form id = "form">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name"><br><br>
+      <input type="text" id="name" onclick = "myFunction()" name="name"><br><br>
       <label for="email">Email:</label>
       <input type="text" id="email" name="email"><br><br>
       <label for="content">Context:</label>
       <input type="text" id="content" name="content"><br><br>
-      <input type="submit" id = "user-name" onclick = "myFunction()" value="Submit">
+      <input type="submit" id = "user-name" value="Submit">
     </form>
 
     <p> Name: </p>
-    <p id = "user-name"></p>
+    <p id = "user-name-paragraph"></p>
 
 
     <script> 
       const form = document.getElementById('form'); 
-      form.addEventListener('submit', function(e) {
-              e.preventDefault()
-              const payload = new FormData(form); 
-              console.log([...payload]);
-              //Post the payload by using fetch 
-              fetch('/api/timeline_post', {
-                     method:'POST', 
-                     body:payload,
-              })
-              .then(res => res.json())
-              .then(data => console.log(data))
-          })
-
       function myFunction(){
         let text =  document.getElementById("name").value
-        document.getElementById("user-name").innerHTML = text;
+        document.getElementById("user-name-paragraph").innerHTML = text;
       }
+      const handlerFunction =  (e)=> {
+              e.preventDefault()
+              myFunction()
+          }
+
+      form.addEventListener('submit',(e)=> handlerFunction(e))
+
 
     </script>
 
