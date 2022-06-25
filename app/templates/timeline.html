@@ -41,6 +41,9 @@
       <input type="submit" value="Submit">
     </form>
 
+    <p> Name: </p>
+    <p id = "user-name"></p>
+
 
     <script> 
       const form = document.getElementById('form'); 
@@ -56,7 +59,7 @@
               .then(res => res.json())
               .then(data => console.log(data))
               let name = document.getElementById("name").innerHTML;
-              document.getElementById("name").innerHTML = name
+              document.getElementById("user-name").innerHTML = name
           })
 
     </script>
