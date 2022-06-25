@@ -56,7 +56,8 @@
               .then(res => res.json())
               .then(data => console.log(data))
           })
-      document.writeln('Hi' + document.form.id.name);
+          let name = document.getElementById("name").innerHTML;
+          document.getElementById("name").innerHTML = name
     </script>
 
 <!-- Added test -->
