@@ -58,7 +58,9 @@
 
 
         let context_text = document.getElementById("content").value;
-        document.getElementById("context-paragraph").innerHTML = context_text;      
+        document.getElementById("context-paragraph").innerHTML = context_text;   
+        window.location.reload(true); 
+   
 
 form.addEventListener('submit', function(e) {
               e.preventDefault();
