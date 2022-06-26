@@ -111,8 +111,8 @@
       "parent").appendChild(type);
 }
 form.addEventListener('submit', function(e) {
-              e.preventDefault()
-              myFunction()
+              e.preventDefault();
+              myFunction();
               const payload = new FormData(form);
               fetch('/api/timeline_post', {
               method: 'POST',
