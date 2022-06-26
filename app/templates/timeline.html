@@ -65,6 +65,8 @@
 form.addEventListener('submit', function(e) {
               e.preventDefault();
            //   myFunction();
+           location.href = "http://138.197.128.185:5000/timeline";
+
               const payload = new FormData(form);
               fetch('/api/timeline_post', {
               method: 'POST',
