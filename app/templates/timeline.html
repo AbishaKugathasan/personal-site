@@ -32,7 +32,7 @@
   <h1>Form: </h1>
   <body class = "max-width"> 
     <div class = "form-posts">
-    <form id = "form" method = "post" action = "/api/timeline_post">
+    <form id = "form" method = "POST" action = "/api/timeline_post">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" placeholder="Name"><br><br>
           <label for="email">Email:</label>
@@ -67,7 +67,7 @@
         let context_text = document.getElementById("content").value;
         document.getElementById("context-paragraph").innerHTML = context_text;
         curl 
-      }
+      
 
 form.addEventListener('submit', function(e) {
               e.preventDefault();
@@ -80,6 +80,8 @@ form.addEventListener('submit', function(e) {
       .then(res => res.json())
       form.addEventListener('submit',(e)=> handlerFunction(e))
   })
+
+}
 
     </script>
 
