@@ -36,9 +36,9 @@
           <label for="name">Name:</label>
           <input type="text" id="name" onclick = "myFunction()" name="name" placeholder="Name"><br><br>
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email"><br><br>
+          <input type="text" id="email" name="email" placeholder="Email"><br><br>
           <label for="content">Context:</label>
-          <input type="text" id="content" name="content"><br><br>
+          <input type="text" id="content" name="content" placeholder="Content"><br><br>
              </div>
         <button type="button" id = "user-name" onclick = "addItem()" value="Submit">Submit</button>
     </form>
@@ -50,11 +50,6 @@
       value="p" />
         </div>
 
-<!-- Parent tag where we add 
-        item as child -->
-        <div class = "name-form-1">
-        <p id="parent"></p>
-          </div>
 
     <div class = "name-form-1">
     Name: <td><i id = "user-name-paragraph"></i></td>
@@ -64,18 +59,12 @@
     <script> 
       const form = document.getElementById('form'); 
       function myFunction(){
-        let text = document.getElementById("name").value
+        let text = document.getElementById("name").value;
         document.getElementById("user-name-paragraph").innerHTML = text;
 
 
-        let value = document.getElementById("value").value;
-        text = document.createElement(text);
-        text.appendChild(document.createTextNode(value));
-        document.getElementById("parent").appendChild(type);
 
-
-
-        let context_text = document.getElementById("content").value
+        let context_text = document.getElementById("content").value;
         document.getElementById("context-paragraph").innerHTML = context_text;
 
         
@@ -101,7 +90,7 @@
       = document.createElement(type);
 
   // Use value as textnode in this example
-  type.appendChild(
+  //type.appendChild(
      // document.createTextNode("Name: " + name + " | Content: " + content));
 
   // Append as child to the parent
