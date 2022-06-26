@@ -40,7 +40,7 @@
           <label for="content">Context:</label>
           <input type="text" id="content" name="content" placeholder="Content"><br><br>
              </div>
-        <button type="submit" id = "submit" onclick = "myFunction(); window.location.reload() " value="Submit">Submit</button>
+        <button type="submit" id = "submit" onclick = "myFunction()" value="Submit">Submit</button>
     </form>
 
 
@@ -65,8 +65,6 @@
 form.addEventListener('submit', function(e) {
               e.preventDefault();
            //   myFunction();
-           location.href = "http://138.197.128.185:5000/timeline";
-
               const payload = new FormData(form);
               fetch('/api/timeline_post', {
               method: 'POST',
@@ -79,7 +77,6 @@ form.addEventListener('submit', function(e) {
       location = window.location.href;
       let url = location.href;
       location.href = "http://138.197.128.185:5000/timeline";
-
 
   })
 
