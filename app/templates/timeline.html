@@ -61,8 +61,9 @@
 
    <br>Content: <td><i id = "context-paragraph"></i></td></div>
 
-   {% for timeline_post in timeline_posts %} 
-   {{timeline_post.content}}
+
+   {% for post in timeline_posts %} 
+   <p>{{post.content}}</p>
    {% endfor %}
 
 
