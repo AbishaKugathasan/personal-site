@@ -40,7 +40,7 @@
           <input type="text" id="email" name="email"><br><br>
           <label for="content">Context:</label>
           <input type="text" id="content" name="content"><br><br>
-        </div>
+             </div>
         <button type="button" id = "user-name" onclick = "addItem()" value="Submit">Submit</button>
     </form>
 
@@ -48,7 +48,7 @@
     <div class = "text-box">
     <input type="text" id="type" 
       placeholder="Like: div, h1, li...." 
-      value="li" />
+      value="h2" />
     <br /><br />
     </div>
 
@@ -64,9 +64,9 @@
 
    <br>Content: <td><i id = "context-paragraph"></i></td></div>
 
-   <p id="parent">Name: </p>
-    <h1>Timeline</h1>
-   
+   <ol id="parent">
+    <li>Timeline</li>
+  </ol>
 
     <script> 
       const form = document.getElementById('form'); 
@@ -106,7 +106,7 @@
 
   // Use value as textnode in this example
   type.appendChild(
-      document.createTextNode(name));
+      document.createTextNode("Name: " + name));
 
   // Append as child to the parent
   // tag i.e. ol
