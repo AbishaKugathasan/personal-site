@@ -109,7 +109,7 @@ def get_time_line_post():
 def delete_time_line_post(): 
     id = request.form['1']
     for p in TimelinePost.select().order_by(TimelinePost.created_at.desc())
-        if model_to_dict(p)['id'] == id: 
+        if model_to_dict(p)['id'] == id 
             p.delete_instance()
 
 
