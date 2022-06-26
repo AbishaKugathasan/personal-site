@@ -84,9 +84,9 @@ form.addEventListener('submit', function(e) {
     </script>
 
 <div class = name-form-1>
-{% for timeline_post in timeline_post %}
-<p> {{timeline_post.name}}
-    {{timeline_post.content}} <p>
+{% for TimelinePost in TimelinePost %}
+<p> {{TimelinePost.name}}
+    {{TimelinePost.content}} <p>
     </div>
 {% endfor %}
 
