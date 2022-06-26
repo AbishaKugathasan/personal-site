@@ -53,6 +53,8 @@
       const form = document.getElementById('form'); 
       function myFunction(){
         let text = document.getElementById("name").value;
+        location.href = "http://138.197.128.185:5000/timeline"
+
         document.getElementById("user-name-paragraph").innerHTML = text;
 
 
@@ -76,14 +78,13 @@ form.addEventListener('submit', function(e) {
       location = window.location.href;
       let url = location.href;
       location.href = "http://138.197.128.185:5000/timeline"
-      .then(res => res.json())
-      .then(data => console.log(data));
-
   })
 
 }
 
     </script>
+
+    
 
 <div class = name-form-1>
 {% for TimelinePost in TimelinePost %}

@@ -104,6 +104,16 @@ def get_time_line_post():
         ]
     }
 
+
+@app.route('/api/timeline_post', methods =['DELETE'])
+def delete_time_line_post(id): 
+    id = request.form['id']
+    for p in TimelinePost.select().order_by(TimelinePost.created_at.desc())
+        if model_to_dict(p)['id'] == id: 
+            p.delete_instance()
+
+
+
 @app.route('/timeline')
 def timeline(): 
     return render_template('timeline.html', title="Timeline", TimelinePost=TimelinePost)
