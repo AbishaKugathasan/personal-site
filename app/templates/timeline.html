@@ -29,9 +29,8 @@
     </ul>
   </nav>
 
-
+  <h1>Form: </h1>
   <body class = "max-width"> 
-    <h1>Form: </h1>
     <div class = "form-posts">
     <form id = "form" method = "post" action = "/api/timeline_post">
           <label for="name">Name:</label>
@@ -61,6 +60,11 @@
     Name: <td><i id = "user-name-paragraph"></i></td>
 
    <br>Content: <td><i id = "context-paragraph"></i></td></div>
+
+   {%for post in posts} 
+      {{post.name}}
+    {% endfor %}
+
 
     <script> 
       const form = document.getElementById('form'); 
