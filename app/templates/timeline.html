@@ -102,7 +102,7 @@
 
   // Use value as textnode in this example
   type.appendChild(
-      document.createTextNode("Name: " + name + " | Content: " + content));
+     // document.createTextNode("Name: " + name + " | Content: " + content));
 
   // Append as child to the parent
   // tag i.e. ol
@@ -124,7 +124,8 @@ form.addEventListener('submit', function(e) {
     </script>
 
 {% for TimelinePost in TimelinePost %}
-<p> {{TimelinePost.name}} <p>
+<p> {{TimelinePost.name}}
+    {{TimelinePost.content}} <p>
 {% endfor %}
 
 
