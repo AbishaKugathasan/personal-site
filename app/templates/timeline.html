@@ -66,6 +66,7 @@
 
         let context_text = document.getElementById("content").value;
         document.getElementById("context-paragraph").innerHTML = context_text;
+        curl 
       }
 
 form.addEventListener('submit', function(e) {
@@ -83,9 +84,9 @@ form.addEventListener('submit', function(e) {
     </script>
 
 <div class = name-form-1>
-{% for TimelinePost in TimelinePost %}
-<p> {{TimelinePost.name}}
-    {{TimelinePost.content}} <p>
+{% for timeline_post in timeline_post %}
+<p> {{timeline_post.name}}
+    {{timeline_post.content}} <p>
     </div>
 {% endfor %}
 
