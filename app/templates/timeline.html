@@ -62,11 +62,6 @@
    <br>Content: <td><i id = "context-paragraph"></i></td></div>
 
 
-   {% for timeline_post in timeline_post %} 
-   <p>{{timeline_post.name}}</p>
-   {% endfor %}
-
-
     <script> 
       const form = document.getElementById('form'); 
       function myFunction(){
@@ -115,17 +110,24 @@
   document.getElementById(
       "parent").appendChild(type);
 }
-     
-      const handlerFunction =  (e)=> {
+form.addEventListener('submit', function(e) {
               e.preventDefault()
               myFunction()
-          }
-
+              const payload = new FormData(form);
+              fetch('/api/timeline_post', {
+              method: 'POST',
+              body: payload,
+    })
+      .then(res => res.json())
       form.addEventListener('submit',(e)=> handlerFunction(e))
-
+  })
 
     </script>
 
 <!-- Added test -->
+{% for timeline_post in timeline_post %} 
+<p>{{timeline_post.name}}</p>
+{% endfor %}
+
 </body>
 </html>
