@@ -94,6 +94,9 @@
   let name = document.
       getElementById("name").value;
 
+  let content = document.
+      getElementById("content").value;
+
   // createElement() is used for
   // creating a new element
   type
@@ -101,7 +104,7 @@
 
   // Use value as textnode in this example
   type.appendChild(
-      document.createTextNode("Name: " + name));
+      document.createTextNode("Name: " + name + " | Content: " + content));
 
   // Append as child to the parent
   // tag i.e. ol
