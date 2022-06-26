@@ -38,7 +38,7 @@
           <input type="text" id="email" name="email"><br><br>
           <label for="content">Context:</label>
           <input type="text" id="content" name="content"><br><br>
-        <input type="submit" id = "user-name" onclick = "addBox()"value="Submit">
+        <input type="submit" id = "user-name" onclick = "myFunction()"value="Submit">
     </form>
 
     <div class = "name-form-1">
@@ -55,6 +55,8 @@
       function myFunction(){
         let text = document.getElementById("name").value
         document.getElementById("user-name-paragraph").innerHTML = text;
+
+        
         let value = document.getElementById("value").value;
         text = document.createElement(text);
         text.appendChild(document.createTextNode(value));
