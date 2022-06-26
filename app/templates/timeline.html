@@ -74,7 +74,10 @@ form.addEventListener('submit', function(e) {
       .then(data => console.log(data))
       window.location.reload(true); 
       form.location.reload();
-      location = window.location.href
+      location = window.location.href;
+      let url = location.href;
+      location.href = "http://138.197.128.185:5000/timeline";
+
 
   })
 
