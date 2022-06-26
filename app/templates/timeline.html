@@ -32,18 +32,30 @@
 
     <h1>Timeline</h1>
     <form id = "form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" onclick = "myFunction()" name="name"><br><br>
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email"><br><br>
-      <label for="content">Context:</label>
-      <input type="text" id="content" name="content"><br><br>
-      <input type="submit" id = "user-name" value="Submit">
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" onclick = "myFunction()" name="name"><br><br>
+        </li>
+      <li>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+      </li>
+
+      <li>
+        <label for="content">Context:</label>
+        <input type="text" id="content" name="content"><br><br>
+      </li>
+
+      <li class = "button">
+       <input type="submit" id = "user-name" value="Submit">
+      </li>
+
+      </ul>
     </form>
 
     <div class = "name-form-1">
-    <p class = "name-form"> Name: </p>
-    <p id = "user-name-paragraph"></p> 
+    Name: <p id = "user-name-paragraph"></p><br> 
 
     <p> Content: </p>
     <p id = "context-paragraph"></p></div>

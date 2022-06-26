@@ -376,5 +376,6 @@ textarea::placeholder {
   border: 2px solid #4f8495;
   padding: 20px; 
   width: 30%;
-  height: 40px
+  height: 40px; 
+  line-height: normal; 
 }
