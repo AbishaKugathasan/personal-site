@@ -33,13 +33,31 @@
     <h1>Timeline</h1>
     <form id = "form" method = "post" action = "/api/timeline_post">
           <label for="name">Name:</label>
-          <input type="text" id="name" onclick = "myFunction()" name="name"><br><br>
+          <input type="text" id="name" onclick = "myFunction()" name="name" placeholder="Name"><br><br>
           <label for="email">Email:</label>
           <input type="text" id="email" name="email"><br><br>
           <label for="content">Context:</label>
           <input type="text" id="content" name="content"><br><br>
-        <input type="submit" id = "user-name" onclick = "myFunction()"value="Submit">
+        <button type="button" id = "user-name" onclick = "addItem()" "value="Submit">Submit</button>
     </form>
+
+    <input type="text" id="type" 
+      placeholder="Like: div, h1, li...." 
+      value="li" />
+    <br /><br />
+
+    <!-- Text/Value for the element --->
+      <label for="value">
+            Add Element Value
+      </label>
+
+
+<!-- Parent tag where we add 
+        item as child -->
+        <ul id="parent">
+          <li>Timeline</li>
+      </ul>
+    
 
     <div class = "name-form-1">
     Name: <td><i id = "user-name-paragraph"></i></td>
@@ -56,7 +74,7 @@
         let text = document.getElementById("name").value
         document.getElementById("user-name-paragraph").innerHTML = text;
 
-        
+
         let value = document.getElementById("value").value;
         text = document.createElement(text);
         text.appendChild(document.createTextNode(value));
@@ -70,6 +88,31 @@
         
       }
 
+      function addItem() {
+  
+  // Get type of element from form
+  let type = document.
+      getElementById("type").value;
+
+  // Get the text/value for the tag
+  // from the form
+  let name = document.
+      getElementById("name").value;
+
+  // createElement() is used for
+  // creating a new element
+  type
+      = document.createElement(type);
+
+  // Use value as textnode in this example
+  type.appendChild(
+      document.createTextNode(name));
+
+  // Append as child to the parent
+  // tag i.e. ol
+  document.getElementById(
+      "parent").appendChild(type);
+}
      
       const handlerFunction =  (e)=> {
               e.preventDefault()
