@@ -60,7 +60,13 @@
     Name: <td><i id = "user-name-paragraph"></i></td>
 
    <br>Content: <td><i id = "context-paragraph"></i></td></div>
-   
+
+
+   {% for post in timeline_posts %} 
+   <p>{{timeline_posts.name}}</p>
+   {% endfor %}
+
+
     <script> 
       const form = document.getElementById('form'); 
       function myFunction(){
