@@ -29,8 +29,8 @@
     </ul>
   </nav>
 
-  <h1>Form: </h1>
   <body class = "max-width"> 
+    <h1>MY TIMELINE: </h1>
     <div class = "form-posts">
     <form id = "form" method = "POST" action = "/api/timeline_post">
           <label for="name">Name:</label>
@@ -40,15 +40,8 @@
           <label for="content">Context:</label>
           <input type="text" id="content" name="content" placeholder="Content"><br><br>
              </div>
-        <button type="button" id = "user-name" onclick = "myFunction()" value="Submit">Submit</button>
+        <button type="submit" id = "submit" onclick = "myFunction()" value="Submit">Submit</button>
     </form>
-
-
-    <div class = "text-box">
-    <input type="text" id="type" 
-      placeholder="Like: div, h1, li...." 
-      value="p" />
-        </div>
 
 
     <div class = "name-form-1">
