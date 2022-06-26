@@ -100,7 +100,8 @@ def get_time_line_post():
     return{
         'timeline_posts':[
             model_to_dict(p)
-            for p in TimelinePost.select().order_by(TimelinePost.created_at.desc())
+            for p in 
+TimelinePost.select().order_by(TimelinePost.created_at.desc())
         ]
     }
 
