@@ -30,6 +30,7 @@
   </nav>
 
 
+  <body class = "max-width"> 
     <h1>Timeline</h1>
     <form id = "form" method = "post" action = "/api/timeline_post">
           <label for="name">Name:</label>
@@ -38,19 +39,15 @@
           <input type="text" id="email" name="email"><br><br>
           <label for="content">Context:</label>
           <input type="text" id="content" name="content"><br><br>
-        <button type="button" id = "user-name" onclick = "addItem()" "value="Submit">Submit</button>
+        <button type="button" id = "user-name" onclick = "addItem()" value="Submit">Submit</button>
     </form>
 
+    <div class = "text-box">
     <input type="text" id="type" 
       placeholder="Like: div, h1, li...." 
       value="li" />
     <br /><br />
-
-    <!-- Text/Value for the element --->
-      <label for="value">
-            Add Element Value
-      </label>
-
+    </div>
 
 <!-- Parent tag where we add 
         item as child -->
@@ -125,4 +122,5 @@
     </script>
 
 <!-- Added test -->
+</body>
 </html>

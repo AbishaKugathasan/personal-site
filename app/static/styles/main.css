@@ -383,3 +383,7 @@ textarea::placeholder {
 td { 
   white-space: nowrap;
 }
+
+.text-box { 
+  opacity: 0%; 
+}
