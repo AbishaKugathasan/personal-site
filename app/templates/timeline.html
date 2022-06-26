@@ -31,7 +31,8 @@
 
 
   <body class = "max-width"> 
-    <h1>Timeline</h1>
+    <h1>Form: </h1>
+    <div class = "form-posts">
     <form id = "form" method = "post" action = "/api/timeline_post">
           <label for="name">Name:</label>
           <input type="text" id="name" onclick = "myFunction()" name="name" placeholder="Name"><br><br>
@@ -41,6 +42,7 @@
           <input type="text" id="content" name="content"><br><br>
         <button type="button" id = "user-name" onclick = "addItem()" value="Submit">Submit</button>
     </form>
+    </div>
 
     <div class = "text-box">
     <input type="text" id="type" 
@@ -52,7 +54,7 @@
 <!-- Parent tag where we add 
         item as child -->
         <ul id="parent">
-          <li>Timeline</li>
+          <h1>Timeline</h1>
       </ul>
     
 
