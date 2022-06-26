@@ -44,12 +44,18 @@
     <p> Name: </p>
     <p id = "user-name-paragraph"></p>
 
+    <p> Content: </p>
+    <p id = "context-paragraph"></p>
+
 
     <script> 
       const form = document.getElementById('form'); 
       function myFunction(){
         let text =  document.getElementById("name").value
         document.getElementById("user-name-paragraph").innerHTML = text;
+
+        let context_text = document.getElementById("content").value
+        document.getElementById("context-paragraph").innerHTML = context_text;
       }
       const handlerFunction =  (e)=> {
               e.preventDefault()
