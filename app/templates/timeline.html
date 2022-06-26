@@ -46,16 +46,26 @@
 
    <br>Content: <td><i id = "context-paragraph"></i></td></div>
 
-   <br> Form Data: <td><i id = "all" </i></td>
+   <ol id="parent">
+    <li>Timeline</li>
+  </ol>
 
     <script> 
       const form = document.getElementById('form'); 
       function myFunction(){
-        let text =  document.getElementById("name").value
+        let text = document.getElementById("name").value
         document.getElementById("user-name-paragraph").innerHTML = text;
+        let value = document.getElementById("value").value;
+        text = document.createElement(text);
+        text.appendChild(document.createTextNode(value));
+        document.getElementById("parent").appendChild(type);
+
+
 
         let context_text = document.getElementById("content").value
         document.getElementById("context-paragraph").innerHTML = context_text;
+
+        
       }
 
      
