@@ -108,9 +108,9 @@ def get_time_line_post():
 @app.route('/api/timeline_post/<id>', methods =['DELETE'])
 def delete_time_line_post(id): 
     id = request.form['id']
-    for p in TimelinePost.select().order_by(TimelinePost.created_at.desc()):
-        if model_to_dict(p)['id'] == id 
-            p.delete_instance()
+    for p in TimelinePost:
+        if TimelinePost['id'] == id:
+            TimelinePost.remove(p)
     return{}
 
 
