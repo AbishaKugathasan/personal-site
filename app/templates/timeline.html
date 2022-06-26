@@ -71,7 +71,8 @@ form.addEventListener('submit', function(e) {
               body: payload,
     })
       .then(res => res.json())
-      location.reload(); 
+      location.href = "http://138.197.128.185:5000/timeline";
+
       .then(data => console.log(data));
       form.location.reload();
       location = window.location.href;
