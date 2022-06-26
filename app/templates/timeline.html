@@ -61,11 +61,6 @@
 
    <br>Content: <td><i id = "context-paragraph"></i></td></div>
 
-  {% for post in TimelinePost %}
-    <p> post.name <p>
-  {% endfor %}
-
-
     <script> 
       const form = document.getElementById('form'); 
       function myFunction(){
@@ -127,6 +122,11 @@ form.addEventListener('submit', function(e) {
   })
 
     </script>
+
+{% for post in TimelinePost %}
+<p> post.name <p>
+{% endfor %}
+
 
 </body>
 </html>
