@@ -374,6 +374,8 @@ textarea::placeholder {
 .name-form-1 {
   color: white;  
   line-height: normal; 
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
 }
 
 td { 
