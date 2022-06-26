@@ -98,7 +98,7 @@ def post_time_line_post():
 @app.route('/api/timeline_post', methods =['GET'])
 def get_time_line_post(): 
     return{
-        'posts':[
+        'timeline_posts':[
             model_to_dict(p)
             for p in 
 TimelinePost.select().order_by(TimelinePost.created_at.desc())
@@ -107,6 +107,6 @@ TimelinePost.select().order_by(TimelinePost.created_at.desc())
 
 @app.route('/timeline')
 def timeline(): 
-    return render_template('timeline.html', title="Timeline", data=data, posts=posts)
+    return render_template('timeline.html', title="Timeline", data=data, timeline_posts=timeline_posts)
 
    
