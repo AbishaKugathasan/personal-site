@@ -50,7 +50,6 @@
    <br>Content: <td><i id = "context-paragraph"></i></td></div>
 
     <script> 
-     window.location.reload(true); 
       const form = document.getElementById('form'); 
       function myFunction(){
         let text = document.getElementById("name").value;
@@ -72,8 +71,8 @@ form.addEventListener('submit', function(e) {
               body: payload,
     })
       .then(res => res.json())
+      window.location.reload(); 
       .then(data => console.log(data));
-      window.location.reload(true); 
       form.location.reload();
       location = window.location.href;
       let url = location.href;
