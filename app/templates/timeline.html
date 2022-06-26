@@ -71,13 +71,13 @@ form.addEventListener('submit', function(e) {
               body: payload,
     })
       .then(res => res.json())
-      location.href = "http://138.197.128.185:5000/timeline";
-
       .then(data => console.log(data));
       form.location.reload();
       location = window.location.href;
       let url = location.href;
-      location.href = "http://138.197.128.185:5000/timeline";
+      location.href = "http://138.197.128.185:5000/timeline"
+      .then(res => res.json())
+      .then(data => console.log(data));
 
   })
 
