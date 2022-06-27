@@ -53,8 +53,6 @@
       const form = document.getElementById('form'); 
       function myFunction(){
         let text = document.getElementById("name").value;
-        location.href = "http://138.197.128.185:5000/timeline"
-
         document.getElementById("user-name-paragraph").innerHTML = text;
 
 
@@ -76,8 +74,6 @@ form.addEventListener('submit', function(e) {
       .then(data => console.log(data));
       form.location.reload();
       location = window.location.href;
-      let url = location.href;
-      location.href = "http://138.197.128.185:5000/timeline"
   })
 
 }
