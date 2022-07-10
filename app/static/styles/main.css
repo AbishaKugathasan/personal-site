@@ -387,3 +387,8 @@ td {
 .form-posts { 
   color:#ffffff;
 }
+
+.content-size { 
+  height:200px;
+  font-size:14pt;
+}
