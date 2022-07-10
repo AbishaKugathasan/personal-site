@@ -405,6 +405,6 @@ textarea {
 .paperplane { 
 
   margin-right: 5em; 
-  width: 500px; 
-  margin: 10px; 
+  position: absolute; 
+  right: 50px; 
 }
