@@ -444,8 +444,3 @@ input[type=text]:focus {
   border: 2px solid white;
 }
 
-.form-format { 
-
-  position: relative; 
-  text-align: center;
-}
