@@ -29,12 +29,12 @@ body {
 .max-width {
   padding: 20px 50px;
   background-color: #222629;
-  font-family: 'Lora';
+  font-family: 'Arbutus Slab';
 
 }
 
 * {
-  font-family: 'Lora';
+  font-family: 'Arbutus Slab';
 }
 
 h1 {
@@ -404,7 +404,7 @@ td {
 
 .timeline-font { 
 
-  font-family: 'Lora';
+  font-family: 'Arbutus Slab';
   font-weight: 400; 
 
 }
@@ -421,7 +421,7 @@ input[type=text]:focus {
 }
 
 .submit-button {
-  background-color: black; /* Green */
+  background-color: #222629; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -432,7 +432,7 @@ input[type=text]:focus {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: black;  
-  color: black; 
+  background-color: #222629;  
+  color: #222629; 
   border: 2px solid white;
 }
