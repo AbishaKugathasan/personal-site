@@ -400,12 +400,14 @@ td {
   margin-right: 5em; 
   position: absolute; 
   right: 50px; 
+  width: 500px; 
 }
 
 .timeline-font { 
 
   font-family: 'Arbutus Slab';
   font-weight: 400; 
+  font-size: 14px; 
 
 }
 
@@ -421,7 +423,7 @@ input[type=text]:focus {
 }
 
 .submit-button {
-  background-color: #222629; /* Green */
+  background-color: #222629; 
   border: none;
   color: white;
   padding: 16px 32px;
@@ -433,6 +435,6 @@ input[type=text]:focus {
   transition-duration: 0.4s;
   cursor: pointer;
   background-color: #222629;  
-  color: #222629; 
+  color: white; 
   border: 2px solid white;
 }
