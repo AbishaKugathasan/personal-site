@@ -44,7 +44,7 @@
     <!--Home Section-->
     <div class="home">
       <div class="left">
-        <h1>ABISHA KUGATHASAN</h1>
+        <h1>Abisha Kugathasan</h1>
         <p>
           <span class="tag">Developer</span> | <span class="tag">Student</span> |
           <span class="tag">Leader</span>
@@ -65,8 +65,49 @@
             ><li><i class="fa-brands fa-twitter"></i></li
           ></a>
         </ul>
+        <div id="weather">
+          <div id="description"></div>
+          <h1 id="temp"></h1>
+          <div id="location"></div>
+        </div>
       </div>
     </div>
+
+    <!--Weather API - Java Script-->
+    <script lang="text/javascript">
+      function weatherBalloon( cityID ) {
+       var key = '34b67f797d779862525d5ae81a1dd637';
+        fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
+        .then(function(resp) { return resp.json() }) // Convert data to json
+        .then(function(data) {
+          drawWeather(data); // Call drawWeather
+    })
+  .catch(function() {
+    // catch any errors
+  });
+}
+
+function drawWeather( d ) {
+	var celcius = Math.round(parseFloat(d.main.temp)-273.15);
+	var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32); 
+	
+	document.getElementById('description').innerHTML = d.weather[0].description;
+	document.getElementById('temp').innerHTML = celcius + '&deg;';
+	document.getElementById('location').innerHTML = d.name;
+  
+	if( description.indexOf('rain') > 0 ) {
+  	document.body.className = 'rainy';
+  } else if( description.indexOf('cloud') > 0 ) {
+  	document.body.className = 'cloudy';
+  } else if( description.indexOf('sunny') > 0 ) {
+  	document.body.className = 'sunny';
+  }
+}
+
+window.onload = function() {
+  weatherBalloon( 6167865 );
+}
+    </script>
 
     <!--Experiences -->
     <div id="experience" class="experience">
@@ -161,9 +202,6 @@
         <button type="submit" className="contact-submit">submit</button>
       </form>
     </div>
-
-
-   
 
   <!-- Form that accepts input to create timeline -->
   <h1><a href="{{ url_for('timeline') }}"> My Timeline</a></h1>
