@@ -102,6 +102,10 @@ function drawWeather( d ) {
   } else if( description.indexOf('sunny') > 0 ) {
   	document.body.className = 'sunny';
   }
+ else if( description.indexOf('broken clouds') > 0 ) {
+  	document.body.className = 'cloudy';
+  }
+
 }
 
 window.onload = function() {
