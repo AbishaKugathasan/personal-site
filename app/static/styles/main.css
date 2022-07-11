@@ -29,12 +29,12 @@ body {
 .max-width {
   padding: 20px 50px;
   background-color: #222629;
-  font-family: 'Arbutus Slab';
+  font-family: 'Lora';
 
 }
 
 * {
-  font-family: 'Arbutus Slab';
+  font-family: 'Lora';
 }
 
 h1 {
@@ -407,7 +407,6 @@ td {
 
   font-family: 'Arbutus Slab';
   font-weight: 400; 
-  font-size: 14px; 
 
 }
 
