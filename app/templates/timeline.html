@@ -32,7 +32,7 @@
   <body class = "max-width"> 
     <h1>My Timeline: </h1>
     <div class = paperplane>
-    <img src="../static/img/blue_paper_airplane.png" width="400" alt="Rabbit with lop ears in barn" width="203px">
+    <img src="../static/img/blue_paper_airplane.png" width="440" alt="Rabbit with lop ears in barn" width="203px">
     </div>
 
     <div class = "form-posts">
@@ -90,7 +90,7 @@ form.addEventListener('submit', function(e) {
 <div class = name-form-1>
 {% for TimelinePost in TimelinePost %}
 <p class = "display-post" style = "text-align:center;"> 
-    Date: {{TimelinePost.created_at}}
+    Date: {{TimelinePost.created_at}}<br>
     Name: {{TimelinePost.name}}<br>
     Content: {{TimelinePost.content}} <p>
 {% endfor %}
