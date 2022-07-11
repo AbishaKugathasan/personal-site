@@ -32,10 +32,10 @@
   <body class = "max-width"> 
     <h1>My Timeline: </h1>
     <div class = paperplane>
-    <img src="../static/img/blue_paper_airplane.png" width="440" alt="Rabbit with lop ears in barn" width="203px">
+    <img src="../static/img/blue_paper_airplane.png" width="460" alt="Rabbit with lop ears in barn" width="203px">
     </div>
 
-    <p class = "timeline font" style = "font-size:20px;">Enter the fields to create a post &#9993;</p>
+    <p class = "timeline font" style = "font-size:20px; color: white;">Enter the fields to create a post &#9993;</p>
     <form id = "form" method = "POST" action = "/api/timeline_post">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" placeholder="Name"><br><br>
@@ -63,7 +63,7 @@
 
         let context_text = document.getElementById("content").value;
         document.getElementById("context-paragraph").innerHTML = context_text;
-        
+
 
 form.addEventListener('submit', function(e) {
               e.preventDefault();
