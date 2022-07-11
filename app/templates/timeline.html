@@ -90,6 +90,7 @@ form.addEventListener('submit', function(e) {
 <div class = name-form-1>
 {% for TimelinePost in TimelinePost %}
 <p class = "display-post" style = "text-align:center;"> 
+    Date: {{TimelinePost.created_at}}
     Name: {{TimelinePost.name}}<br>
     Content: {{TimelinePost.content}} <p>
 {% endfor %}
