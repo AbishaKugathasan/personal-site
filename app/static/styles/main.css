@@ -29,6 +29,8 @@ body {
 .max-width {
   padding: 20px 50px;
   background-color: #222629;
+  font-family: 'Lora';
+
 }
 
 * {
@@ -421,12 +423,13 @@ input[type=text]:focus {
 .submit-button { 
 
   border-radius: 8px;
-  background-color: rgb(191, 235, 147);
+  background-color: #222629;
   border: none;
   color: white;
   padding: 16px 32px;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+  border-color: #ffffff
 
 }
