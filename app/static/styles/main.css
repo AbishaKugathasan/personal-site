@@ -426,3 +426,20 @@ input[type=text]:focus {
   font-size: 16px; 
 
 }
+
+.submit-button{
+  background-color: #222629; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #222629;  
+  color: white; 
+  border: 2px solid white;
+}
