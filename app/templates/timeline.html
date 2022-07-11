@@ -30,28 +30,25 @@
   </nav>
 
   <body class = "max-width"> 
-    <h1>MY TIMELINE: </h1>
+    <h1>My Timeline: </h1>
     <div class = paperplane>
     <img src="../static/img/blue_paper_airplane.png" alt="Rabbit with lop ears in barn" width="203px">
     </div>
 
     <div class = "form-posts">
-    <p>Enter the fields to create a post!</p>
+    <p class = "timeline font">enter the fields to create a post &#9993;</p>
     <form id = "form" method = "POST" action = "/api/timeline_post">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Name">
+          <input type="text" id="name" name="name" placeholder="Name"><br><br>
           <label for="email">Email:</label>
-          <input type="text" id="email" name="email" placeholder="Email">
-          <br><br>
-          <!--Content Field of the Form -->
-          
+          <input type="text" id="email" name="email" placeholder="Email"><br><br>
           <label for="content">Context:</label>
-          <textarea name = "content" rows = "3" cols = "3" placeholder="content" ></textarea>
-          </div><br><br>
+          <input type = "text" id = "content" name = "contant" placeholder="content" ></textarea>
+          </div>
        <button type="submit" id = "submit" onclick = "myFunction()" value="submit"> Submit</button><br><br>
     </form>
 
-    <h1 style = "text-align:center">Recent Posts</h1> 
+    <h1 class = "timeline-font" style = "text-align:center">Past Present and Future</h1> 
     <div class = "name-form-1">
     Name: <td><i id = "user-name-paragraph"></i></td>
 
