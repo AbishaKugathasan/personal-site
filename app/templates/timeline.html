@@ -36,6 +36,8 @@
     </div>
 
     <p class = "timeline font" style = "font-size:20px; color: white;">Enter the fields to create a post &#9993;</p>
+
+    <div class = "form-format">
     <form id = "form" method = "POST" action = "/api/timeline_post">
           <label for="name" style = "color: white;">Name:</label>
           <input type="text" id="name" name="name" placeholder="Name"><br><br>
@@ -45,6 +47,7 @@
           <input type = "text" id = "content" name = "content" placeholder="Content" ><br>
        <button type="submit" class = "submit-button" id = "submit" onclick = "myFunction()" value="submit"> Submit</button><br><br>
     </form>
+    </div>
 
     <div class = "name-form-1" style="color: #222629;">
       Name: <td><i id = "user-name-paragraph"></i></td>
