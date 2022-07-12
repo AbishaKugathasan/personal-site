@@ -444,6 +444,17 @@ input[type=text]:focus {
   border: 2px solid white;
 }
 
+#weather { 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #fff;
+    text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 body.sunny {
   background-image: linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
