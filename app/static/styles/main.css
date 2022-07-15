@@ -500,9 +500,9 @@ body.rainy {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 50px 50px 50px;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: #222629;
   padding: 10px;
   text-align: center; 
   height: 100vh; 
