@@ -162,7 +162,6 @@ fetchNASAData()
           <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built.</u></h1>
           <div class="proj-cards">
             {% for proj in projects %}
-            <div class = "grid-container">
             <div class="proj-card">
               <div class="proj-left">
                 <h2 style="text-align:left">{{ proj.name }}</h2>
@@ -174,7 +173,6 @@ fetchNASAData()
                   <a href="{{ proj.demo }}"><button>Demo</button></a>
                 </div>
               </div>
-            </div>
             </div>
             {% endfor %}
           </div>
