@@ -35,8 +35,8 @@
     <ul class="nav-menu">
       <a href=""><li style = "scroll-behavior: smooth;">Home</li></a>
       <a href="#about"><li style = "scroll-behavior: smooth;">About Me</li></a>
-      <a href="#experience"><li>Experience</li></a>
       <a href="#projs"><li>Projects</li></a>
+      <a href="#experience"><li>Experience</li></a>
       <!-- Contact commented out for now 
       <a href="#contact"><li>Contact</li></a>
       -->
@@ -157,9 +157,36 @@ fetchNASAData()
 
     </script> 
 
+        <!--Project Section-->
+        <div id="projs" class="projs">
+          <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built.</u></h1>
+          <div class="proj-cards">
+            {% for proj in projects %}
+            <div class="proj-card">
+              <div class="proj-left">
+                <h2 style="text-align:center;">{{ proj.name }}</h2>
+                <p class="proj-descrip">{{ proj.descrip }}</p>
+              </div>
+              <div class="proj-right">
+                <img
+                  src="{{proj.img}}"
+                  width="250"
+                  height="250"
+                />
+                <div class="proj-buttons">
+                  <a href="{{ proj.git }}"><button>GitHub</button></a>
+                  <a href="{{ proj.demo }}"><button>Demo</button></a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+    
+
     <!--Experiences -->
     <div id="experience" class="experience">
-      <h1>Experience</h1>
+      <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>My Adventures.</u></h1>
       <a id="resume-pdf" href=".\static\img\software-engineer-resume-example.pdf" download="newfilename">Resume.pdf</a>
       <div class="exp-cards">
         {% for exp in experiences %}
@@ -175,39 +202,11 @@ fetchNASAData()
       </div>
     </div>
 
-    <!--Project Section-->
-    <div id="projs" class="projs">
-      <h1>Projects</h1>
-      <div class="proj-cards">
-        {% for proj in projects %}
-        <div class="proj-card">
-          <div class="proj-left">
-            <h2>{{ proj.name }}</h2>
-            <p class="proj-descrip">{{ proj.descrip }}</p>
-          </div>
-          <div class="proj-right">
-            <img
-              src="{{proj.img}}"
-              width="250"
-              height="250"
-            />
-            <div class="proj-buttons">
-              <a href="{{ proj.git }}"><button>GitHub</button></a>
-              <a href="{{ proj.demo }}"><button>Demo</button></a>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-
     <!--Picture Section-->
     <div id="abouts" class="about-section">
       <h1>Pictures</h1>
-      <p>My Interests: Blockchain, Machine Learning, DevOps</p>
       <p>
-        My <a href="{{ url_for('hobbies') }}">Hobbies</a>: Swimming, Text Cdfdhange 1,
-        Traveling
+        My <a href="{{ url_for('hobbies') }}">Hobbies</a>: Swimming, Photography & Travelling
       </p>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         {% for pol in polaroids %}
