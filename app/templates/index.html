@@ -162,10 +162,10 @@ fetchNASAData()
           <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built.</u></h1>
           <div class="proj-cards">
             {% for proj in projects %}
-            <div class="grid-container">
+            <div class="proj-card">
               <div class="proj-left">
-                <p style="text-align:left" style = "font-size: 10px;">{{ proj.name }}</h2>
-                <p class="proj-descrip" style = "font-size: 10px;">{{ proj.descrip }}</p>
+                <h2 style="text-align:left">{{ proj.name }}</h2>
+                <p class="proj-descrip">{{ proj.descrip }}</p>
               </div>
               <div class="proj-right">
                 <div class="proj-buttons">
