@@ -136,8 +136,7 @@ ul a:hover {
 
 .proj-cards {
   display: grid;
-  /*grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));*/
-  grid-template-columns: repeat(auto-fill, minmax(500px, 2fr, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 1rem;
 }
 
@@ -310,7 +309,7 @@ ul a:hover {
 .exp-card {
   border-radius: 5px;
   background: rgb(79, 132, 149);
-  width: 20%;
+  width: 30%;
   min-height: 100px;
   padding: 30px;
   margin: 20px;
