@@ -55,6 +55,7 @@ nav {
   padding: 20px;
   padding-right: 30px;
   background-color: #222629;
+  scroll-behavior: smooth;
   z-index: 999;
 }
 
@@ -101,6 +102,7 @@ ul a:hover {
   color: #a1daec;
   font-size: 110%;
   transition: 0.3s ease-out;
+  text-align: center;
 }
 
 .home .right {
@@ -119,7 +121,7 @@ ul a:hover {
 
 .home .right img {
   border-radius: 3%;
-  max-width: 500px;
+  max-width: 620px;
   border:#4f8495 3px solid;
 }
 
@@ -452,4 +454,46 @@ body.cloudy {
 }
 body.rainy {
   background-image: linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
+}
+
+.weather { 
+
+  border-radius: 25px;
+  background: rgb(200, 191, 231);
+  padding: 20px; 
+  width: 150px;
+  height: 20px; 
+
+}
+
+#icon { 
+
+  width: 1000px; 
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.picture-explanation-container {
+  display: flex;
+}
+
+#picture {
+  width: 40%;
+  margin-right: 1rem;
+}
+
+#explanation {
+  letter-spacing: 0px;
+  line-height: 20px;
+}
+
+.list-item {
+  display: table;
+  margin: 0 auto;
 }

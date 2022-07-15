@@ -14,10 +14,9 @@
     <meta property="og:url" content="{{ url }}" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Lora:400,400i,700,700i" rel="stylesheet">    
+   
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -34,11 +33,14 @@
   <!--Nav-->
   <nav>
     <ul class="nav-menu">
-      <a href=""><li>Home</li></a>
+      <a href=""><li style = "scroll-behavior: smooth;">Home</li></a>
+      <a href="#about"><li style = "scroll-behavior: smooth;">About Me</li></a>
       <a href="#experience"><li>Experience</li></a>
       <a href="#projs"><li>Projects</li></a>
-      <a href="#about"><li>About Me</li></a>
+      <!-- Contact commented out for now 
       <a href="#contact"><li>Contact</li></a>
+      -->
+      <a href="{{ url_for('timeline') }}"><li>Timeline</li></a>
     </ul>
   </nav>
 
@@ -46,29 +48,16 @@
     <!--Home Section-->
     <div class="home">
       <div class="left">
-        <h1 style = "font-family: Lora;">Abisha Kugathasan</h1>
+        <h1 style = "font-family: Lora;"><u>Abisha Kugathasan</u></h1>
         <p>
           <span class="tag">Developer</span> | <span class="tag">Student</span> |
-          <span class="tag">Leader</span>
+          <span class="tag">Space Lover</span>
         </p>
-        <ul class="links">
-          <a href="https://github.com/AbishaKugathasan">
-            <li><i class="fa-brands fa-linkedin"></i></li>
-          </a>
-          <a href="https://www.linkedin.com/in/abisha-kugathasan/"
-            ><li><i class="fa-brands fa-github"></i></li
-          ></a>
-          <a href=""
-            ><li><i class="fa-brands fa-twitter"></i></li
-          ></a>
-        </ul>
       </div>
       <div class="right">
-        <div id="weather">
-          <div id="description"></div>
-          <img id="icon" alt = "image of daylight" />
-          <h1 id="temp"></h1>
-          <div id="location"></div>
+          <img id="icon" alt = "image of current weather conditions" style="width: 1000px;"/><br>
+          <div class ="weather"> 
+            <span id="description"></span> <span id="temp"></span>
         </div>
       </div>
     </div>
@@ -92,8 +81,7 @@ function drawWeather( d ) {
 	var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
 
   var img = document.getElementById('icon'); 
-  img.src = `../../assets/weatherIcons/${d.weather[0].icon +".png" || "01n.png"}`;
-  img.onerror ="this.onerror=null;this.src=''http://openweathermap.org/img/wn/10d@2x.png" 
+  img.src = `../../assets/weatherIcons/${d.weather[0].icon +".jpg" || "01n.png"}`;
   console.log(img);
   console.log(d.weather[0]);
 	document.getElementById('description').innerHTML = d.weather[0].description;
@@ -111,9 +99,63 @@ function drawWeather( d ) {
 }
 
 window.onload = function() {
-  weatherBalloon( 6167865 );
+  weatherBalloon( 6066513 );
 }
     </script>
+
+      <!--About Me Section-->
+    <div id="about" class="about-section">
+      <h1 style = "font-family: Arbutus Slab; font-size: 50px;"><u>A Little More about Me.</u></h1>
+      <!--
+      <h2 id="title"></h2>
+      <p id="date"></p><-->
+        <main class="container"> 
+          
+        
+        
+        <section class="picture-explanation-container">
+          <img src="" id="picture" alt="astronomy image by NASA" />
+          <p id="explanation" style = "text-align: justify;">Hi, my name is Abisha Kuagathasan. I am a Canadian🍁University Student who is studying Computer Engineering at the University of Toronto.
+            The reason why I chose Engineering in the beginning is because it gives me the opportunity to create <i>something</i> that may not be in the world yet. My passion stemmed from my 1st computer class my mom took me to 
+            when I was young and what drove me was my curiosity of how everything worked. I have been designing programs since I was young which led me to the path of loving programming.  <br><br>
+
+            Outside of work, I design robots in the Robotics Association Club, a photographer for my University and take part in Tokie Okie, which is our school's paper. In addition, I am in WISE (Women in Science and Engineering) to encourage young women to take part in this field. Lastly, I have an interest in 
+            Astronomy so, instead of a picture of myself I decided to put a picture of NASA's POTD - which today's is the <span id = "title"></span>. 🔭 <br><br> 
+      
+            If you're interested in connecting or chatting. Connect with me through: 
+             <br><br>📧 <u style = "color: white; text-align:end;"><a href =mailto:abku1.8219@gmail.com>Email</a></u>
+            <br>💼 <u style = "color: white; text-align:end;"><a href = "https://www.linkedin.com/in/abisha-kugathasan/">LinkedIn</a></u>
+            <br>👩‍💻 <u style = "color: white; text-align:end;"><a href = "https://github.com/AbishaKugathasan" >GitHub</a></u> 
+        </section>
+      </main>
+
+    </div>
+
+    <!-- Using NASA's API-->
+    <script>
+      function fetchNASAData()  {
+       var key = 'c4B0UymmwcMAn2GxmuSIOW1bhHm3H89N8Xjp6IKi';
+        fetch('https://api.nasa.gov/planetary/apod?api_key=' + key)  
+        .then(function(resp) { return resp.json() }) // Convert data to json
+        .then(function(data) {
+          displayData(data); // Call drawWeather
+    })
+  .catch(function() {
+    // catch any errors
+  });
+}
+
+
+function displayData (data) {
+  document.getElementById('title').textContent = data.title
+  //document.getElementById('date').textContent = data.date
+  document.getElementById('picture').src = data.hdurl
+  //document.getElementById('explanation').textContent = data.explanation
+}
+
+fetchNASAData()
+
+    </script> 
 
     <!--Experiences -->
     <div id="experience" class="experience">
@@ -159,7 +201,7 @@ window.onload = function() {
       </div>
     </div>
 
-    <!--About Me Section-->
+    <!--Picture Section-->
     <div id="about" class="about-section">
       <h1>About Me</h1>
       <p>My Interests: Blockchain, Machine Learning, DevOps</p>
@@ -193,7 +235,7 @@ window.onload = function() {
       </div>
     </div>
 
-    <!--Contact-->
+    <!--Contact
     <div id="contact" class="contact">
       <h1>Contact</h1>
       <form class="contact-form">
@@ -208,9 +250,9 @@ window.onload = function() {
         <button type="submit" className="contact-submit">submit</button>
       </form>
     </div>
-
-  <!-- Form that accepts input to create timeline -->
+    -->
+  <!-- Form that accepts input to create timeline 
   <h1><a href="{{ url_for('timeline') }}"> My Timeline</a></h1>
-    
+    -->
 
 </html>
