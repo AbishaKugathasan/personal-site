@@ -307,11 +307,11 @@ ul a:hover {
 }
 
 .exp-card {
-  border-radius: 5px;
+  border-radius: 2px;
   background: rgb(79, 132, 149);
-  width: 30%;
-  min-height: 100px;
-  padding: 30px;
+  width: 20%;
+  max-height: 100px;
+  padding: 20px;
   margin: 20px;
   text-align: left;
   color: white;
