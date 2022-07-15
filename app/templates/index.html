@@ -186,12 +186,12 @@ fetchNASAData()
       <div class="exp-cards">
         {% for exp in experiences %}
         <div class="exp-card">
-          <h2 style = "font-size: 15px; font-family: Lora;">{{ exp.name }}</h2>
-          <ul style = "color: #6b6e70;">
+          <h2 style = font-family: Lora;">{{ exp.name }}</h2>
+          <p style = "color: #6b6e70;">
             {% for pt in exp.descrip %}
-            <li>{{ pt }}</li> 
+            <p>{{ pt }}</p> 
             {% endfor %}
-          </ul>
+          </p>
         </div>
         {% endfor %}
       </div>
