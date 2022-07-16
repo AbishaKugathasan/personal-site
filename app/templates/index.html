@@ -183,7 +183,7 @@ fetchNASAData()
     <div id="experience" class="experience">
       <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>My Adventures.</u></h1>
       <a id="resume-pdf" href=".\static\img\software-engineer-resume-example.pdf" download="newfilename">Resume.pdf</a>
-      <div class="exp-cards">
+      <span class="exp-cards">
         {% for exp in experiences %}
         <span class="exp-card">
           <h3 style = "font-family: Lora;">{{ exp.name }}</h3>
@@ -192,9 +192,9 @@ fetchNASAData()
             <p>{{ pt }}</p> 
             {% endfor %}
           </p>
-        </div>
+        </span>
         {% endfor %}
-      </div>
+      </span>
     </div>
 
     <!--Picture Section-->
