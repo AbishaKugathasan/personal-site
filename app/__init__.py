@@ -35,7 +35,7 @@ mydb.connect()
 mydb.create_tables([TimelinePost])
 #project
 class Proj:
-    def __init__(self, name, descrip,git) -> None:
+    def __init__(self, name, descrip, git) -> None:
         self.name = name
         self.descrip = descrip
         self.git = git

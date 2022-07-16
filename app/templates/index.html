@@ -182,11 +182,13 @@ fetchNASAData()
     <!-- Projects-->
         <div id="experience" class="experience">
           <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built.</u></h1>
-          <span class="exp-cards" a href="{{ proj.git }}">
+          <span class="exp-cards">
             {% for proj in projects %}
             <span class="exp-card">
+              <a href="{{ proj.git }}">
               <h3 style = "font-family: Lora; text-align: left;">{{ proj.name }}</h3>
               <p class="proj-descrip">{{ proj.descrip }}</p>
+            </a>
             </span>
             {% endfor %}
           </span>
