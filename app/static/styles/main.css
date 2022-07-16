@@ -531,6 +531,3 @@ body.rainy {
   place-items: center; 
 }
 
-::selection {
-  background: rgb(200, 191, 231);
-}

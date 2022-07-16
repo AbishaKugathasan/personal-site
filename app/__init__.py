@@ -71,7 +71,7 @@ def index():
         Proj("Assembly Language Programs", "Collection of projects that is written in ARM. which works on DE1-Soc Board." ,"https://www.google.ca/"),
         Proj("Bean Counter", "Game where player dodges obstacles to load a truck.","https://www.google.ca/"),
         Proj("Mario's Pizzeria", "Game where player needs to make a pizza according to customer's orders.","https://www.google.ca/"), 
-        Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://www.google.ca/"), 
+        Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://github.com/AbishaKugathasan/MLHFellowshipProject"), 
         Proj("WeGrowth", "Children's app that teaches them about the environment and resembles flappy bird","https://www.google.ca/")
     ]
 
