@@ -1,15 +1,24 @@
-# Production Engineering - Week 1 - Portfolio Site
-
-A portfolio website that has sections to display basic information, experiences, education, hobbies, and contact info.
+# Production Engineering - Portfolio Site
+My personal portfolio website that showcases my projects, experience, hobbies and education.
 
 ## Visuals
-<img width="500" alt="Screen Shot 2022-06-05 at 9 17 48 PM" src="https://user-images.githubusercontent.com/81380688/172093992-a66cdcca-c806-4b8e-977b-bce52c8cbd98.png">
+<img width="500" alt="Screen Shot 2022-07-15 at 9 17 48 PM" src="https://user-images.githubusercontent.com/77181669/179336802-935db26c-9531-4b6c-91df-0456c706a65a.png">
 
-<img width="500" alt="Screen Shot 2022-06-05 at 9 18 27 PM" src="https://user-images.githubusercontent.com/81380688/172094046-96e23942-8fc1-48fa-a2ae-16e8e8393705.png">
+<img width="500" alt="Screen Shot 2022-07-15 at 9 18 27 PM" src="https://user-images.githubusercontent.com/77181669/179336822-e763eaf0-11cc-4847-9977-f5751ff34a71.png">
 
-## Technologies Used
+
+## Technologies Used :computer:
 - HTML & CSS for the frontend
 - Python, Flask, & Jinja to make use of reusable templates and route to different URLs
+- Openweathermap API 
+- NASA API 
+
+## Special Features of the Site 
+## Weather :sunny:
+- Displays weather information and an approporiate picture which correlates to the weather displayed. Works with daytime and nighttime. 
+
+## NASA POTD :telescope:
+- Displays NASA's picture of the day in the about me section - which is recieved from using NASA's API. 
 
 ## Installation
 
