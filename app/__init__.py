@@ -77,7 +77,6 @@ def index():
     ]
 
     exps = [
-        Exp("My Resume"),
         Exp("University of Toronto Robotics Association 🤖",  ["point 1", "point 2", "point 3"])
         Exp("Experience 2", ["point 1", "point 2", "point 3"]),
         Exp("Experience 3", ["point 1", "point 2", "point 3"]),
