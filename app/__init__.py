@@ -77,7 +77,6 @@ def index():
     ]
 
     exps = [
-        Exp("Resume", [""]),
         Exp("University of Toronto Robotics Association 🤖", ["Designer","Present"]),
         Exp("Meta x MLH Fellowship 💻", ["Fellow","Present"]),
         Exp("University of Toronto", ["Web Developer", "Present"]), 
