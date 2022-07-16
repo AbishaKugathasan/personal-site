@@ -306,20 +306,7 @@ ul a:hover {
   justify-content: center;
 }
 
-.proj-card {
-  border-radius: 1px;
-  border: 1px solid transparent;
-  background: #222629;
-  width: 25%;
-  max-height: 150px;
-  padding: 20px;
-  margin: 20px;
-  text-align: left;
-  color: white;
-}
-
-
-.exp-card {
+.exp-card .proj-card {
   border-radius: 1px;
   border: 1px solid transparent;
   background: #222629;
