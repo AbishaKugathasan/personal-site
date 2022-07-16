@@ -300,13 +300,13 @@ ul a:hover {
 
 /* Experience */
 
-.exp-cards .proj-cards {
+.exp-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.exp-card .proj-card {
+.exp-card {
   border-radius: 1px;
   border: 1px solid transparent;
   background: #222629;
@@ -337,7 +337,7 @@ ul a:hover {
 
 .exp-card h3 {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 /*Contact*/
