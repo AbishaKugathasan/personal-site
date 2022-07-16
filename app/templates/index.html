@@ -157,7 +157,7 @@ fetchNASAData()
 
     </script> 
 
-        <!--Project Section-->
+        <!--Project 
         <div id="projs" class="projs">
           <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built.</u></h1>
           <div class="proj-cards">
@@ -177,7 +177,20 @@ fetchNASAData()
             {% endfor %}
           </div>
         </div>
+    Section-->
+
     
+        <div id="experience" class="experience">
+          <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built.</u></h1>
+          <span class="exp-cards">
+            {% for proj in projects %}
+            <span class="exp-card">
+              <h3 style = "font-family: Lora; text-align: center;">{{ proj.name }}</h3>
+              <p class="proj-descrip">{{ proj.descrip }}</p>
+            </span>
+            {% endfor %}
+          </span>
+        </div>
 
     <!--Experiences -->
     <div id="experience" class="experience">
