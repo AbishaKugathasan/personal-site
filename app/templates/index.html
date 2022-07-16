@@ -183,7 +183,6 @@ fetchNASAData()
     <div id="experience" class="experience">
       <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>My Adventures.</u></h1>
       <p style = "text-align: center; font-family: Lora;"><i><a id = "resume-pdf" href = ".\static\img\software-engineer-resume-example.pdf" download = "newfilename">Click here to download my resume</a></i></p> 
-      <a id="resume-pdf" href=".\static\img\software-engineer-resume-example.pdf" download="newfilename">Resume.pdf</a>
       <span class="exp-cards">
         {% for exp in experiences %}
         <span class="exp-card">
@@ -198,9 +197,9 @@ fetchNASAData()
       </span>
     </div>
 
-    <!--Picture Section-->
+    <!--Hobbies Section-->
     <div id="abouts" class="about-section">
-      <h1>Pictures</h1>
+      <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u><a href="{{ url_for('hobbies') }}">My Hobbies.</a></u></h1>
       <p>
         My <a href="{{ url_for('hobbies') }}">Hobbies</a>: Swimming, Photography & Travelling
       </p>
@@ -223,9 +222,12 @@ fetchNASAData()
         </div>
         {% endfor %}
       </div>
+
+      <!-- Map section 
       <div class="map">
         <img src="../static/img/Screenshot 2022-06-04 163820.png" />
         <p>Where I've Been</p>
+        -->
         
       </div>
     </div>

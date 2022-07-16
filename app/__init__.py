@@ -80,7 +80,7 @@ def index():
         Exp("UofT Robotics Association 🤖",  ["Team Member", " Present"]),
         Exp("Meta x MLH Fellowship 🖥️ ", ["Fellow", "Present"]),
         Exp("UofT West Wall Project ", ["Engineering Team", "Jan 2020 - June 2020"]),
-        Exp("My Resume", ["Click here to download"]),
+        Exp("Experience 4", ["Click here to download"]),
         Exp("Experience 5", ["point 1", "point 2"]),
         Exp("Experience 6", ["point 1", "point 2"])
     ]
