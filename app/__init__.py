@@ -67,12 +67,12 @@ def index():
 
     projs = [
         Proj("Google Maps", "A project that resembles and adds onto features of Google Maps.","https://www.google.ca/"),
-        Proj("Designing a Processor", "Design of a processor written in verilog, which supports I/O devices and instructions.","https://github.com/AbishaKugathasan/ECE243-Labs"),
-        Proj("Assembly Language Programs", "Collection of projects that is written in ARM. which works on DE1-Soc Board." ,"https://github.com/AbishaKugathasan/ECE243-Labs"),
+        Proj("Designing a Processor", "Design of a processor written in verilog.","https://github.com/AbishaKugathasan/ECE243-Labs"),
+        Proj("Assembly Language Programs", "Collection of projects that is written in ARM." ,"https://github.com/AbishaKugathasan/ECE243-Labs"),
         Proj("Bean Counter", "Game where player dodges obstacles to load a truck.","https://github.com/AbishaKugathasan/Beans-Counter-Game"),
         Proj("Mario's Pizzeria", "Game where player needs to make a pizza according to customer's orders.","https://github.com/AbishaKugathasan/MarioPizzeria"), 
         Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://github.com/AbishaKugathasan/MLHFellowshipProject"), 
-        Proj("WeGrowth", "Children's app that teaches them about the environment and resembles flappy bird","https://devpost.com/software/branched-out")
+        Proj("WeGrowth", " Environmental Children's app that resembles flappy bird","https://devpost.com/software/branched-out")
     ]
 
     exps = [
