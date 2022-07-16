@@ -136,7 +136,7 @@ ul a:hover {
 
 .proj-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 1rem;
 }
 
@@ -311,7 +311,7 @@ ul a:hover {
   border: 1px solid transparent;
   background: #222629;
   width: 20%;
-  max-height: 100px;
+  max-height: 120px;
   padding: 20px;
   margin: 20px;
   text-align: left;
