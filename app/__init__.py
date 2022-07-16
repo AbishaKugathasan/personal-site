@@ -77,8 +77,8 @@ def index():
     ]
 
     exps = [
-        Exp("University of Toronto Robotics Association 🤖",  ["point 1", "point 2"]),
-        Exp("Experience 2", ["point 1", "point 2"]),
+        Exp("UofT Robotics Association 🤖",  ["Team Member", "Present"]),
+        Exp("Meta x MLH Fellowship ", ["Fellow", "Present"]),
         Exp("Experience 3", ["point 1", "point 2"]),
         Exp("Experience 4", ["point 1", "point 2"]),
         Exp("Experience 5", ["point 1", "point 2"]),
