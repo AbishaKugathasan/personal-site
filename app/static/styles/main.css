@@ -531,3 +531,11 @@ body.rainy {
   place-items: center; 
 }
 
+.images { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6em; 
+  padding-right: 6em; 
+}
+
