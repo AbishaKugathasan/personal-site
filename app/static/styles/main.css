@@ -300,11 +300,12 @@ ul a:hover {
 
 /* Experience */
 
-.exp-cards {
+.exp-cards .proj-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 
 .exp-card {
   border-radius: 1px;
