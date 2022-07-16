@@ -307,7 +307,7 @@ ul a:hover {
 }
 
 .exp-card {
-  border-radius: 2px;
+  border-radius: 1px;
   border: 1px solid transparent;
   background: #222629;
   width: 20%;
@@ -319,7 +319,7 @@ ul a:hover {
 }
 
 .exp-card:hover {
-  border-radius: 2px;
+  border-radius: 1px;
   border: 1px solid #d0d0d0;
   background: #222629;
   width: 20%;
