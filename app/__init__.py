@@ -66,14 +66,17 @@ pols = [
 def index():
 
     projs = [
-        Proj("Google Maps", "A project that resemble features of Google Maps.",
+        Proj("Google Maps", "A project that resembles and adds onto features of Google Maps.",
              ),
         Proj("Designing a Processor", "Design of a processor written in verilog, which supports LEDR and the push buttons. Processor is able to support instructions such as add, substract, move, move-top and branch. Quartus Prime software was used to implement this project in verilog. Processor was tested through test benches and ModelSim Simulations to ensure correctness.",
              ),
-        Proj("Assembly Language Programs", "Collection of projects that is written in ARM. These projects utilizes I/O devices such as the LEDR, 7-Segment Display, Push Buttons, Switches and the A9-Private Timer. These programs were tested on a DE1-Soc Board.",
+        Proj("Assembly Language Programs", "Collection of projects that is written in ARM. which works on DE1-Soc Board." ,
              ),
-        Proj("Video Games", "Collection of video games that are created in teams. Video games created include video games that connect to the VGA display. These games use animations and input/output devices. Also, includes video games that are played on desktop or mobile",
-             )
+        Proj("Bean Counter", "Game where player dodges obstacles to load a truck.",
+             ),
+        Proj("Mario's Pizzeria", "Game where player needs to make a pizza according to customer's orders."), 
+        Proj("Personal Portfolio", "Showcases my interests, education, experience etc."), 
+        Proj("WeGrowth", "Children's app that teaches them about the environment and resembles flappy bird")
     ]
 
     exps = [
