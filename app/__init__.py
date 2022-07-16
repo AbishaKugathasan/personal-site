@@ -53,6 +53,10 @@ class Exp:
         self.name = name
         self.descrip = descrip
 
+class Lang: 
+    def __init__(self, pic) -> None:
+        self.pic = pic
+
 
 pols = [
     Polaroid("Swimming", "https://i.pinimg.com/736x/54/2d/e8/542de8a80f8a4c58cf42e37ee88f8ee9.jpg"),
@@ -84,7 +88,11 @@ def index():
         Exp("Experience 6", ["point 1", "point 2"])
     ]
 
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), projects=projs, polaroids=pols, experiences=exps)
+    langs = [
+        Lang("https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png")
+    ]
+
+    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), projects=projs, polaroids=pols, experiences=exps,languages=langs)
 
 
 @app.route('/hobbies')
