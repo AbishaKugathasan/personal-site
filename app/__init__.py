@@ -58,7 +58,7 @@ pols = [
     Polaroid("Swimming", "https://i.pinimg.com/736x/54/2d/e8/542de8a80f8a4c58cf42e37ee88f8ee9.jpg"),
     Polaroid("Hiking", ".\static\img\R.jpg"),
     Polaroid("Tennis",
-             "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5b77a570056595.5b96c6000f7ed.jpg")
+             "https://i.pinimg.com/564x/e3/84/fb/e384fbdab133e1237f5e6d8af6ad5df2--spring-style-sporty.jpg")
 ]
 
 
