@@ -179,10 +179,10 @@ fetchNASAData()
         </div>
     Section-->
 
-    
+    <!-- Projects-->
         <div id="experience" class="experience">
           <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built.</u></h1>
-          <span class="exp-cards">
+          <span class="exp-cards" a href="{{ proj.git }}">
             {% for proj in projects %}
             <span class="exp-card">
               <h3 style = "font-family: Lora; text-align: left;">{{ proj.name }}</h3>
@@ -198,7 +198,7 @@ fetchNASAData()
       <p style = "text-align: center; font-family: Lora;"><i><a id = "resume-pdf" href = ".\static\img\software-engineer-resume-example.pdf" download = "newfilename">Click here to download my resume</a></i></p> 
       <span class="exp-cards">
         {% for exp in experiences %}
-        <span class="exp-card">
+        <span class="exp-card" >
           <h3 style = "font-family: Lora; text-align: center;">{{ exp.name }}</h3>
           <p style = "color: #6b6e70;">
             {% for pt in exp.descrip %}

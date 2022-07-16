@@ -35,10 +35,10 @@ mydb.connect()
 mydb.create_tables([TimelinePost])
 #project
 class Proj:
-    def __init__(self, name, descrip) -> None:
+    def __init__(self, name, descrip,git) -> None:
         self.name = name
         self.descrip = descrip
-       # self.git = git
+        self.git = git
        # self.demo = demo
 
 
@@ -66,17 +66,13 @@ pols = [
 def index():
 
     projs = [
-        Proj("Google Maps", "A project that resembles and adds onto features of Google Maps.",
-             ),
-        Proj("Designing a Processor", "Design of a processor written in verilog, which supports LEDR and the push buttons. Processor is able to support instructions such as add, substract, move, move-top and branch. Quartus Prime software was used to implement this project in verilog. Processor was tested through test benches and ModelSim Simulations to ensure correctness.",
-             ),
-        Proj("Assembly Language Programs", "Collection of projects that is written in ARM. which works on DE1-Soc Board." ,
-             ),
-        Proj("Bean Counter", "Game where player dodges obstacles to load a truck.",
-             ),
-        Proj("Mario's Pizzeria", "Game where player needs to make a pizza according to customer's orders."), 
-        Proj("Personal Portfolio", "Showcases my interests, education, experience etc."), 
-        Proj("WeGrowth", "Children's app that teaches them about the environment and resembles flappy bird")
+        Proj("Google Maps", "A project that resembles and adds onto features of Google Maps.","https://www.google.ca/"),
+        Proj("Designing a Processor", "Design of a processor written in verilog, which supports I/O devices and instructions.","https://www.google.ca/"),
+        Proj("Assembly Language Programs", "Collection of projects that is written in ARM. which works on DE1-Soc Board." ,"https://www.google.ca/"),
+        Proj("Bean Counter", "Game where player dodges obstacles to load a truck.","https://www.google.ca/"),
+        Proj("Mario's Pizzeria", "Game where player needs to make a pizza according to customer's orders.","https://www.google.ca/"), 
+        Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://www.google.ca/"), 
+        Proj("WeGrowth", "Children's app that teaches them about the environment and resembles flappy bird","https://www.google.ca/")
     ]
 
     exps = [
