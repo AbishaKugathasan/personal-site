@@ -67,6 +67,12 @@ pols = [
              "https://i.pinimg.com/564x/e3/84/fb/e384fbdab133e1237f5e6d8af6ad5df2--spring-style-sporty.jpg")
 ]
 
+conts = [
+    Cont("https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-gmail-icon-download-png-and-vector-1.png"),
+    Cont("https://cdn-icons-png.flaticon.com/512/174/174857.png"),
+    Cont("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png")
+    ]
+
 
 @app.route('/')
 def index():
@@ -79,12 +85,6 @@ def index():
         Proj("Mario's Pizzeria 🍕", "Game where player makes a pizza according to customer's orders.","https://github.com/AbishaKugathasan/MarioPizzeria","Built By: C, ModelSim"), 
         Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://github.com/AbishaKugathasan/MLHFellowshipProject","Built By: Python, Flask, JS"), 
         Proj("WeGrowth 🌳", " Environmental Children's app that resembles flappy bird","https://devpost.com/software/branched-out","Built By: C, CMake, CSS")
-    ]
-
-    conts = [
-        Cont("https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-gmail-icon-download-png-and-vector-1.png"),
-        Cont("https://cdn-icons-png.flaticon.com/512/174/174857.png"),
-        Cont("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png")
     ]
 
     exps = [
