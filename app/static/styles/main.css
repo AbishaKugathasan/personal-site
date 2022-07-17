@@ -358,7 +358,8 @@ ul a:hover {
 .contact-card {
   border-radius: 1px;
   border: 1px solid transparent;
-  background: #222629;
+  background: linear-gradient(to right, rgb(#a1daec) , rgb(200, 191, 231));
+
   width: 20%;
   max-height: 100px;
   padding: 20px;
@@ -371,7 +372,6 @@ ul a:hover {
   border-radius: 1px;
   border: 1px solid #d0d0d0;
   background: linear-gradient(to right, rgb(#a1daec) , rgb(200, 191, 231));
-
   width: 20%;
   max-height: 100px;
   padding: 20px;
