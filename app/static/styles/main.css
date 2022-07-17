@@ -125,6 +125,13 @@ ul a:hover {
   text-align: center;
 }
 
+.content:hover {
+  color: #a1daec;
+  font-size: 110%;
+  transition: 0.3s ease-out;
+  text-align: center;
+}
+
 .home .right {
   flex: 4;
   display: flex;
