@@ -125,7 +125,7 @@ ul a:hover {
   text-align: center;
 }
 
-.content:hover {
+.content_1:hover {
   color: #a1daec;
   font-size: 110%;
   transition: 0.3s ease-out;
