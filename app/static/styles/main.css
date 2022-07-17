@@ -44,7 +44,7 @@ body {
 
 }
 
-#experience, #projs, #about, #cont, #lang   {
+#experience, #projs, #about, #cont, #lang, #hobbies   {
   height:100vh;
 }
 
@@ -216,6 +216,15 @@ ul a:hover {
   background-color: #222629;
   color: white;
 }
+
+
+.hobbies-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #222629;
+  color: white;
+}
+
 
 .cont-section {
   padding: 50px;
