@@ -354,6 +354,32 @@ ul a:hover {
   color: white;
 }
 
+
+.contact-card {
+  border-radius: 1px;
+  border: 1px solid transparent;
+  background: #222629;
+  width: 20%;
+  max-height: 100px;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+  color: white;
+}
+
+.contact-card:hover {
+  border-radius: 1px;
+  border: 1px solid #d0d0d0;
+  background: linear-gradient(to right, rgb(#a1daec) , rgb(200, 191, 231));
+
+  width: 20%;
+  max-height: 100px;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+  color: white;
+}
+
 .exp-card ul {
   margin: 0;
   padding: 0px 10px;
