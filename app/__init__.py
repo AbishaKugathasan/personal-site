@@ -82,7 +82,8 @@ def index():
     ]
 
     conts = [
-        Cont("Email")
+        Cont("Email"),
+        Cont("LinkedIn")
     ]
 
     exps = [
