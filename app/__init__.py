@@ -72,13 +72,13 @@ pols = [
 def index():
 
     projs = [
-        Proj("Google Maps 🗺️", "A project that resembles and adds onto features of Google Maps.","https://www.google.ca/", "Built By: C++, blah , blah"),
-        Proj("Designing a Processor ⚡", "Design of a processor written in verilog.","https://github.com/AbishaKugathasan/ECE243-Labs","Built By: C++, blah , blah"),
-        Proj("Assembly Language", "Collection of projects that is written in ARM." ,"https://github.com/AbishaKugathasan/ECE243-Labs","Built By: C++, blah , blah"),
-        Proj("Bean Counter 🎮", "Game where player dodges obstacles to load a truck.","https://github.com/AbishaKugathasan/Beans-Counter-Game","Built By: C++, blah , blah"),
-        Proj("Mario's Pizzeria 🍕", "Game where player needs to make a pizza according to customer's orders.","https://github.com/AbishaKugathasan/MarioPizzeria","Built By: C++, blah , blah"), 
-        Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://github.com/AbishaKugathasan/MLHFellowshipProject","Built By: C++, blah , blah"), 
-        Proj("WeGrowth 🌳", " Environmental Children's app that resembles flappy bird","https://devpost.com/software/branched-out","Built By: C++, blah , blah")
+        Proj("Google Maps 🗺️", "A project that resembles and adds onto features of Google Maps.","https://www.google.ca/", "Built By: C++, GTK, OpenStreetMap"),
+        Proj("Designing a Processor ⚡", "Design of a processor written in verilog.","https://github.com/AbishaKugathasan/ECE243-Labs","Built By: Verilog, Quartus Prime II, Python, ModelSim"),
+        Proj("Assembly Language", "Collection of projects that is written in ARM." ,"https://github.com/AbishaKugathasan/ECE243-Labs","Built By: ModelSim, CPULator"),
+        Proj("Bean Counter 🎮", "Game where player dodges obstacles to load a truck.","https://github.com/AbishaKugathasan/Beans-Counter-Game","Built By: C, ModelSim"),
+        Proj("Mario's Pizzeria 🍕", "Game where player makes a pizza according to customer's orders.","https://github.com/AbishaKugathasan/MarioPizzeria","Built By: C, ModelSim"), 
+        Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://github.com/AbishaKugathasan/MLHFellowshipProject","Built By: Python, Flask, JS"), 
+        Proj("WeGrowth 🌳", " Environmental Children's app that resembles flappy bird","https://devpost.com/software/branched-out","Built By: C, CMake, CSS")
     ]
 
     conts = [
