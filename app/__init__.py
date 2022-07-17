@@ -54,7 +54,7 @@ class Exp:
         self.descrip = descrip
 
 class Cont: 
-    def __init__(self, name, descrip) -> None:
+    def __init__(self, name) -> None:
         self.name = name
 
 
