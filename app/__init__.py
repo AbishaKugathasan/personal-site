@@ -55,8 +55,8 @@ class Exp:
         self.descrip = descrip
 
 class Cont: 
-    def __init__(self, name) -> None:
-        self.name = name
+    def __init__(self, img) -> None:
+        self.name = img
        
 
 
@@ -82,7 +82,7 @@ def index():
     ]
 
     conts = [
-        Cont("Email"),
+        Cont("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-mail.svg/1024px-Circle-icons-mail.svg.png"),
         Cont("LinkedIn")
     ]
 
