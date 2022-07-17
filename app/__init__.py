@@ -82,8 +82,9 @@ def index():
     ]
 
     conts = [
-        Cont("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Circle-icons-mail.svg/1024px-Circle-icons-mail.svg.png"),
-        Cont("LinkedIn")
+        Cont("https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-gmail-icon-download-png-and-vector-1.png"),
+        Cont("https://cdn-icons-png.flaticon.com/512/174/174857.png"),
+        Cont("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png")
     ]
 
     exps = [

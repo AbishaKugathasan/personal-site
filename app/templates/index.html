@@ -290,18 +290,36 @@ fetchNASAData()
       </div>
 
 
-
       <div id="cont" class="cont-section">
         <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Say <i>Hello!</i></u></h1> 
         <p style = "font-family: Lora; text-align: center;">Feel free to connect with me about any exciting projects, opportunities or even just to chat</p>
         <span class="exp-cards">
           {% for cont in contacts %}
           <span class="exp-card" >
+            <img src= "{{ cont.img}}" width="60" height="60" hspace="20"/> 
+          </span>
+          {% endfor %}
+        </span>
+      </div>
+
+
+
+
+
+      <!--Contact page with the buttons 
+      <div id="cont" class="cont-section">
+        <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Say <i>Hello!</i></u></h1> 
+        <p style = "font-family: Lora; text-align: center;">Feel free to connect with me about any exciting projects, opportunities or even just to chat</p>
+        <span class="exp-cards">
+          {% for cont in contacts %}
+          <span class="exp-card" >
+            <h3 style = "font-family: Lora; text-align: center;">{{ cont.name }}</h3>
             <img src = "{{ cont.img}}" width = "50px" height="50px"/> 
           </span>
           {% endfor %}
         </span>
       </div>
+      -->
 
           <!--Contact 
     <div id="experience" class="experience">
