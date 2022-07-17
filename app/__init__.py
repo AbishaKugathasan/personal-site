@@ -35,10 +35,11 @@ mydb.connect()
 mydb.create_tables([TimelinePost])
 #project
 class Proj:
-    def __init__(self, name, descrip, git) -> None:
+    def __init__(self, name, descrip, git, built) -> None:
         self.name = name
         self.descrip = descrip
         self.git = git
+        self.built = built
        # self.demo = demo
 
 
@@ -71,13 +72,13 @@ pols = [
 def index():
 
     projs = [
-        Proj("Google Maps 🗺️", "A project that resembles and adds onto features of Google Maps.","https://www.google.ca/"),
-        Proj("Designing a Processor ⚡", "Design of a processor written in verilog.","https://github.com/AbishaKugathasan/ECE243-Labs"),
-        Proj("Assembly Language Programs", "Collection of projects that is written in ARM." ,"https://github.com/AbishaKugathasan/ECE243-Labs"),
-        Proj("Bean Counter 🎮", "Game where player dodges obstacles to load a truck.","https://github.com/AbishaKugathasan/Beans-Counter-Game"),
-        Proj("Mario's Pizzeria 🍕", "Game where player needs to make a pizza according to customer's orders.","https://github.com/AbishaKugathasan/MarioPizzeria"), 
-        Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://github.com/AbishaKugathasan/MLHFellowshipProject"), 
-        Proj("WeGrowth 🌳", " Environmental Children's app that resembles flappy bird","https://devpost.com/software/branched-out")
+        Proj("Google Maps 🗺️", "A project that resembles and adds onto features of Google Maps.","https://www.google.ca/", "Built By: C++, blah , blah"),
+        Proj("Designing a Processor ⚡", "Design of a processor written in verilog.","https://github.com/AbishaKugathasan/ECE243-Labs","Built By: C++, blah , blah"),
+        Proj("Assembly Language", "Collection of projects that is written in ARM." ,"https://github.com/AbishaKugathasan/ECE243-Labs","Built By: C++, blah , blah"),
+        Proj("Bean Counter 🎮", "Game where player dodges obstacles to load a truck.","https://github.com/AbishaKugathasan/Beans-Counter-Game","Built By: C++, blah , blah"),
+        Proj("Mario's Pizzeria 🍕", "Game where player needs to make a pizza according to customer's orders.","https://github.com/AbishaKugathasan/MarioPizzeria","Built By: C++, blah , blah"), 
+        Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://github.com/AbishaKugathasan/MLHFellowshipProject","Built By: C++, blah , blah"), 
+        Proj("WeGrowth 🌳", " Environmental Children's app that resembles flappy bird","https://devpost.com/software/branched-out","Built By: C++, blah , blah")
     ]
 
     conts = [
