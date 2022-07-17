@@ -76,12 +76,7 @@ def index():
         Proj("Bean Counter 🎮", "Game where player dodges obstacles to load a truck.","https://github.com/AbishaKugathasan/Beans-Counter-Game"),
         Proj("Mario's Pizzeria 🍕", "Game where player needs to make a pizza according to customer's orders.","https://github.com/AbishaKugathasan/MarioPizzeria"), 
         Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://github.com/AbishaKugathasan/MLHFellowshipProject"), 
-        Proj("WeGrowth 🌳", " Environmental Children's app that resembles flappy bird","https://devpost.com/software/branched-out"),
-        Proj("Bean Counter 🎮", "Game where player dodges obstacles to load a truck.","https://github.com/AbishaKugathasan/Beans-Counter-Game"),
-        Proj("Mario's Pizzeria 🍕", "Game where player needs to make a pizza according to customer's orders.","https://github.com/AbishaKugathasan/MarioPizzeria"), 
-        Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://github.com/AbishaKugathasan/MLHFellowshipProject"), 
         Proj("WeGrowth 🌳", " Environmental Children's app that resembles flappy bird","https://devpost.com/software/branched-out")
-       
     ]
 
     conts = [
@@ -93,9 +88,6 @@ def index():
         Exp("UofT Robotics Association 🤖",  ["Team Member", " Present"]),
         Exp("Meta x MLH Fellowship 🖥️ ", ["Fellow", "Present"]),
         Exp("UofT West Wall Project ", ["Engineering Team", "Jan 2020 - June 2020"]),
-        Exp("Experience 4", ["Click here to download"]),
-        Exp("Experience 5", ["point 1", "point 2"]),
-        Exp("Experience 6", ["point 1", "point 2"])
     ]
 
 

@@ -14,6 +14,13 @@ body {
 
 }
 
+lang { 
+  margin-top: -80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+}
+
 #projs {
   margin-top: -80px;
   padding-top: 80px;
