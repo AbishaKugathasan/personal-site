@@ -359,7 +359,6 @@ ul a:hover {
   border-radius: 1px;
   border: 1px solid transparent;
   background: linear-gradient(to right, rgb(#a1daec) , rgb(200, 191, 231));
-
   width: 20%;
   max-height: 100px;
   padding: 20px;
@@ -378,6 +377,11 @@ ul a:hover {
   margin: 20px;
   text-align: left;
   color: white;
+}
+
+.contact-card h3 {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .exp-card ul {
