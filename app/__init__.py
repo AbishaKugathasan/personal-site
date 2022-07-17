@@ -88,6 +88,8 @@ def index():
         Exp("UofT Robotics Association 🤖",  ["Team Member", " Present"]),
         Exp("Meta x MLH Fellowship 🖥️ ", ["Fellow", "Present"]),
         Exp("UofT West Wall Project ", ["Engineering Team", "Jan 2020 - June 2020"]),
+        Exp("UofT EngSoc", ["Web Developer", "Sept 2022"]),
+        Exp("UofT EngSoc", ["Frosh Leedur", "June 2022"])
     ]
 
 
