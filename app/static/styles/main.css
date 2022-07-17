@@ -533,9 +533,21 @@ body.rainy {
 
 .images { 
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  justify-content:center;
   padding-left: 6em; 
   padding-right: 6em; 
+  
 }
 
+.capt { 
+  position: relative; 
+  white-space: pre;
+
+}
+
+.nav-menu_1 {
+  display: flex;
+  justify-content:center;
+  gap: 20px;
+}
