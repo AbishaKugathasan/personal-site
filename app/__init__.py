@@ -55,8 +55,9 @@ class Exp:
         self.descrip = descrip
 
 class Cont: 
-    def __init__(self, name) -> None:
+    def __init__(self, name, times) -> None:
         self.name = name
+        self.name = times
        
 
 
@@ -82,8 +83,8 @@ def index():
     ]
 
     conts = [
-        Cont("Email"),
-        Cont("LinkedIn")
+        Cont("Email", "Available Times: "),
+        Cont("LinkedIn", "Avalible Times: ")
     ]
 
     exps = [
