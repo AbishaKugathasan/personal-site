@@ -3,22 +3,20 @@ body {
 }
 
 #experience {
-  margin-top: -80px;
+  margin-top: -90px;
   padding-top: 80px;
   margin-bottom: 80px;
-  padding-bottom: 80px;
-
 }
 
 #about {
-  margin-top: -80px;
+  margin-top: -90px;
   padding-top: 80px;
-  
 
 }
 
 #projs {
-  margin-top: -80px;
+  margin-top: -90px;
+  padding-top: 80px;
   margin-bottom: 80px;
   padding-bottom: 80px;
 
@@ -26,7 +24,7 @@ body {
 
 
 #cont {
-  padding-top: 80px;
+  padding-top: -90px;
 
 }
 
