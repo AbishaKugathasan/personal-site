@@ -289,7 +289,22 @@ fetchNASAData()
         {% endfor %}
       </div>
 
-          <!--Contact Page-->
+
+
+      <div id="projs" class="proj-section">
+        <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Say <i>Hello!</i></u></h1> 
+        <p style = "font-family: Lora; text-align: center;">Feel free to connect with me about any exciting projects, opportunities or even just to chat</p>
+        <span class="exp-cards">
+          {% for cont in contacts %}
+          <span class="exp-card" >
+            <h3 style = "font-family: Lora; text-align: center;">{{ cont.name }}</h3>
+            <h3 style = "font-family: Lora; text-align: center;">{{ cont.times }}</h3>
+          </span>
+          {% endfor %}
+        </span>
+      </div>
+
+          <!--Contact 
     <div id="experience" class="experience">
       <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Say <i>Hello!</i></u></h1>
       <p style = "font-family: Lora; text-align: center;">Feel free to connect with me about any exciting projects, opportunities or even just to chat</p>
@@ -304,6 +319,7 @@ fetchNASAData()
         {% endfor %}
       </span>
     </div>
+    Page-->
 
       <!-- Map section 
       <div class="map">
