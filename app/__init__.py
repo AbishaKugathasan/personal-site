@@ -53,9 +53,9 @@ class Exp:
         self.name = name
         self.descrip = descrip
 
-class Lang: 
-    def __init__(self, pic) -> None:
-        self.pic = pic
+class Cont: 
+    def __init__(self, name, descrip) -> None:
+        self.name = name
 
 
 pols = [
@@ -77,6 +77,12 @@ def index():
         Proj("Mario's Pizzeria 🍕", "Game where player needs to make a pizza according to customer's orders.","https://github.com/AbishaKugathasan/MarioPizzeria"), 
         Proj("Personal Portfolio", "Showcases my interests, education, experience etc.","https://github.com/AbishaKugathasan/MLHFellowshipProject"), 
         Proj("WeGrowth 🌳", " Environmental Children's app that resembles flappy bird","https://devpost.com/software/branched-out")
+       
+    ]
+
+    conts = [
+        Cont("Email"),
+        Cont("LinkedIn")
     ]
 
     exps = [
@@ -88,11 +94,8 @@ def index():
         Exp("Experience 6", ["point 1", "point 2"])
     ]
 
-    langs = [
-        Lang("https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png")
-    ]
 
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), projects=projs, polaroids=pols, experiences=exps,languages=langs)
+    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"), projects=projs, polaroids=pols, experiences=exps,contacts=conts)
 
 
 @app.route('/hobbies')

@@ -287,6 +287,18 @@ fetchNASAData()
       </div>
     </div>
 
+    <!--Contact Page-->
+    <div id="projs" class="experience">
+      <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built.</u></h1>
+      <span class="exp-cards">
+        {% for cont in contacts %}
+        <span class="exp-card">
+          <h3 style = "font-family: Lora; text-align: left;">{{ cont.name }}</h3>
+        </span>
+        {% endfor %}
+      </span>
+    </div>
+
     <!--Hobbies Section-->
     <div id="abouts" class="about-section">
       <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center; color: white"><u><a href="{{ url_for('hobbies') }}">My Hobbies.</a></u></h1>
