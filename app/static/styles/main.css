@@ -195,6 +195,12 @@ ul a:hover {
   color: #000;
 }
 
+.proj-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #222629;
+  color: white;
+}
 /* Styles for about-me-section */
 
 .about-section {
