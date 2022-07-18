@@ -36,6 +36,13 @@ body {
     padding-bottom: 80px;
 }
 
+#images-id {
+  margin-top: -80px;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+}
+
 
 #cont {
   padding-top: 80px;
@@ -44,7 +51,7 @@ body {
 
 }
 
-#experience, #projs, #about, #cont, #lang, #hobbies   {
+#experience, #projs, #about, #cont, #lang, #hobbies, #images-id  {
   height:100vh;
 }
 
@@ -219,6 +226,13 @@ ul a:hover {
 
 
 .hobbies-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #222629;
+  color: white;
+}
+
+.images-sec {
   padding: 50px;
   text-align: center;
   background-color: #222629;
