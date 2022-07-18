@@ -83,7 +83,8 @@ function drawWeather( d ) {
 	var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32);
 
   var img = document.getElementById('icon'); 
-  img.src = `./static/img/${d.weather[0].icon +".jpg" || "../../assets/weatherIcons/01n.jpg"}`;
+
+  img.src = `../static/img/${d.weather[0].icon +".jpg" || "../../assets/weatherIcons/01n.jpg"}`;
   console.log(img);
   console.log(d.weather[0]);
 	document.getElementById('description').innerHTML = d.weather[0].description;
