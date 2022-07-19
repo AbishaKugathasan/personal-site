@@ -651,3 +651,7 @@ body.rainy {
   justify-content:center;
   gap: 20px;
 }
+
+#myFooter {
+  background-color: pink;
+}

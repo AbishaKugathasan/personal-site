@@ -14,8 +14,8 @@
     <meta property="og:url" content="{{ url }}" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Lora:400,400i,700,700i" rel="stylesheet">    
-   
+    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Lora:400,400i,700,700i" rel="stylesheet"> 
+    
 
     <link
       rel="stylesheet"
@@ -108,7 +108,7 @@ window.onload = function() {
 
       <!--About Me Section-->
     <div id="about" class="about-section">
-      <h1 style = "font-family: Arbutus Slab; font-size: 50px;"><u>A Little More about Me.</u></h1>
+      <h1 style = "font-family: Arbutus Slab; font-size: 50px;"><u>A Little More about Me</u></h1>
       <!--
       <h2 id="title"></h2>
       <p id="date"></p><-->
@@ -162,7 +162,7 @@ fetchNASAData()
 
     <!-- Projects-->
         <div id="projs" class="proj-section">
-          <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built.</u></h1>
+          <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built</u></h1>
           <span class="exp-cards">
             {% for proj in projects %}
             <span class="exp-card">
@@ -179,7 +179,7 @@ fetchNASAData()
 
     <!--Experiences -->
     <div id="experience" class="experience">
-      <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>My Adventures.</u></h1>
+      <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>My Adventures</u></h1>
       <p style = "text-align: center; font-family: Lora;"><i><a id = "resume-pdf" href = ".\static\img\software-engineer-resume-example.pdf" download = "newfilename">Click here to download my resume</a></i></p> 
       <span class="exp-cards">
         {% for exp in experiences %}
@@ -197,7 +197,7 @@ fetchNASAData()
 
     <!--Learning-->
         <div id="images-id" class="images-sec">
-          <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>My Journey of Learning.</u></h1>
+          <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>My Journey of Learning</u></h1>
           <h2 style = "font-family: Lora; text-align: center; color: white;">Proficient</h2>
 
           <!--Images of Languages that I am proficient in-->
@@ -287,7 +287,7 @@ fetchNASAData()
 
     <!--Hobbies Section-->
     <div id="hobbies" class="hobbies-section">
-      <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center; color: white"><u><a href="{{ url_for('hobbies') }}">My Hobbies.</a></u></h1>
+      <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center; color: white"><u><a href="{{ url_for('hobbies') }}">My Hobbies</a></u></h1>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         {% for pol in polaroids %}
         <div class="polaroid">
@@ -310,7 +310,7 @@ fetchNASAData()
 
       <div id = "cont" class = "cont-section" >
       <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Say <i>Hello!</i></u></h1> 
-      <p style = "font-family: Lora; text-align: center; color: #a1daec">Feel free to connect with me about any exciting projects, opportunities or even just to chat</p><br>
+      <p style = "font-family: Lora; text-align: center; color: #a1daec">Feel free to connect with me about any exciting projects, opportunities or to simply chat</p><br>
       <div class = "images" style = "text-align: center;padding-left:20em;padding-right:20em; ">
           <ul class="nav-menu_1" style ="top: 50%; left: 50%;">
             <a href =mailto:abku1.8219@gmail.com target="_blank" class ="content_1"><li><img src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-gmail-icon-download-png-and-vector-1.png" width="80" height="80" hspace="20"/></a>
@@ -319,6 +319,9 @@ fetchNASAData()
           </ul>
       </div>
       </div>
+
+      <footer id = "myFooter" style>""</footer>
+
 
 
 
