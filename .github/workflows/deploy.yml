@@ -29,4 +29,3 @@ jobs:
 
       - name: Print Project root directory 
         run: ssh my-vps 'cd ${{ secrets.PROJECT_ROOT }} && pwd' 
-    
