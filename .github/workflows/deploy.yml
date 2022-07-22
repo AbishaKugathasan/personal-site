@@ -33,7 +33,7 @@ jobs:
         run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚨 Deployment Failed"
 
       - name: Deploy Site 
-        run: ssh my-vm '~/redeploy-site.sh'
+        run: ssh my-vps '~/redeploy-site.sh'
         
       - name: Step To run on failure
         if: ${{ failure() }}
