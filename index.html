@@ -84,7 +84,7 @@ function drawWeather( d ) {
 
   var img = document.getElementById('icon'); 
 
-  img.src = `${d.weather[0].icon +".jpg" || "../../assets/weatherIcons/01n.jpg"}`;
+  img.src = `./${d.weather[0].icon +".jpg" || "../../assets/weatherIcons/01n.jpg"}`;
   console.log(img);
   console.log(d.weather[0]);
 	document.getElementById('description').innerHTML = d.weather[0].description;
