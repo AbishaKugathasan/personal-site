@@ -1,4 +1,7 @@
 # Production Engineering - Portfolio Site
+***Note: This is an imported repo from my MLH project, so I can run it on another clouding site
+Please visit https://github.com/AbishaKugathasan/MLHFellowshipProject for more details of the site and features***
+
 My personal portfolio website that showcases my projects, experience, hobbies and education.
 
 ## Visuals
