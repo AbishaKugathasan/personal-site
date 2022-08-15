@@ -35,7 +35,7 @@ mydb.connect()
 mydb.create_tables([TimelinePost])
 #project
 class Proj:
-    def __init__(self, name, descrip, git, built) -> None:
+    def __main__(self, name, descrip, git, built) -> None:
         self.name = name
         self.descrip = descrip
         self.git = git
@@ -44,18 +44,18 @@ class Proj:
 
 
 class Polaroid:
-    def __init__(self, caption, pic):
+    def __main__(self, caption, pic):
         self.caption = caption
         self.pic = pic
 
 
 class Exp:
-    def __init__(self, name, descrip) -> None:
+    def __main__(self, name, descrip) -> None:
         self.name = name
         self.descrip = descrip
 
 class Cont: 
-    def __init__(self, img) -> None:
+    def __main__(self, img) -> None:
         self.name = img
        
 

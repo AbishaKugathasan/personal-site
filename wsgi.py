@@ -1,6 +1,6 @@
 #wsgi.py
 
-from app.__init__ import app
+from app.main import app
 
-if __name__ == "__init__":
+if __name__ == "__main__":
         app.run()
