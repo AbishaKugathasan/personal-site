@@ -16,13 +16,13 @@
 
     <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
-    <title>{{ title }}</title>
+    <title>{{ title }</title>
 </head>
 
 <nav>
   <ul class="nav-menu">
-    <a href="https://akugathasan.duckdns.org/"><li style = "scroll-behavior: smooth;">Home</li></a>
-    <a href="https://akugathasan.duckdns.org/#about"><li style = "scroll-behavior: smooth;">About Me</li></a>
+    <a href="#about"><li style = "scroll-behavior: smooth;">Home</li></a>
+    <a href="#projs"><li style = "scroll-behavior: smooth;">About Me</li></a>
     <a href="https://akugathasan.duckdns.org/#projs"><li>Projects</li></a>
     <a href="https://akugathasan.duckdns.org/#experience"><li>Experience</li></a>
     <a href="https://akugathasan.duckdns.org/#images-id"><li>Languages</li></a>
@@ -33,23 +33,54 @@
 <body class="max-width">
     <h1> Hobbies</h1>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        {% for pol in polaroids %}
+       
         <div class="polaroid">
           <a
             class="caption"
             href="#"
             style="font-size: 1px"
-            title="{{ pol.caption }}"
+            title="swimming"
           >
             <img
               height="250"
-              src="{{ pol.pic }}"
+              src="https://i.pinimg.com/736x/54/2d/e8/542de8a80f8a4c58cf42e37ee88f8ee9.jpg"
               alt="Santorini"
-              title="Santorini"
             />
           </a>
         </div>
-        {% endfor %}
+
+
+
+        <div class="polaroid">
+          <a
+            class="caption"
+            href="#"
+            style="font-size: 1px"
+            title="Hiking"
+          >
+            <img
+              height="250"
+              src=".\R.jpg"
+              alt="Santorini"
+            />
+          </a>
+        </div>
+
+        <div class="polaroid">
+          <a
+            class="Tennis"
+            href="#"
+            style="font-size: 1px"
+            title="Hiking"
+          >
+            <img
+              height="250"
+              src="https://i.pinimg.com/564x/e3/84/fb/e384fbdab133e1237f5e6d8af6ad5df2--spring-style-sporty.jpg"
+              alt="Santorini"
+            />
+          </a>
+        </div>
+  
       </div>
 </body>
 </html>
