@@ -165,7 +165,8 @@ fetchNASAData()
         <div id="projs" class="proj-section">
           <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>Things I've Built</u></h1>
           <span class="exp-cards">
-            {% for proj in projects %}
+
+            <!-- TEMPLATE FOR PROJECTS
             <span class="exp-card">
               <a href="{{ proj.git }}" target="_blank">
               <h3 style = "font-family: Lora; text-align: left;">{{ proj.name }}</h3>
@@ -174,7 +175,82 @@ fetchNASAData()
               <p class="proj-descrip" style = "font-size: 11px; color:#878a8d">{{ proj.git }}</p>
             </a>
             </span>
-            {% endfor %}
+            -->
+
+            <!--Project 1 -->
+            <span class="exp-card">
+              <a href="https://www.google.ca/" target="_blank">
+              <h3 style = "font-family: Lora; text-align: left;">Google Maps 🗺️</h3>
+              <p class="proj-descrip">A project that resembles and adds onto features of Google Maps.</p>
+              <p class="proj-descrip" style = "font-size: 11px; color: white"><i>Built By: C++, GTK, OpenStreetMap</i></p>
+              <p class="proj-descrip" style = "font-size: 11px; color:#878a8d">https://github.com/AbishaKugathasan/ECE243-Labs</p>
+            </a>
+            </span>
+
+            <!--Project 2 -->
+            <span class="exp-card">
+              <a href="https://github.com/AbishaKugathasan/ECE243-Labs" target="_blank">
+              <h3 style = "font-family: Lora; text-align: left;">Designing a Processor ⚡</h3>
+              <p class="proj-descrip">Design of a processor written in verilog.</p>
+              <p class="proj-descrip" style = "font-size: 11px; color: white"><i>Built By: Verilog, Python, ModelSim</i></p>
+              <p class="proj-descrip" style = "font-size: 11px; color:#878a8d">https://github.com/AbishaKugathasan/ECE243-Labs</p>
+            </a>
+            </span>
+
+
+            <!--Project 3 -->
+            <span class="exp-card">
+              <a href="https://github.com/AbishaKugathasan/ECE243-Labs" target="_blank">
+              <h3 style = "font-family: Lora; text-align: left;">Assembly Language</h3>
+              <p class="proj-descrip">Collection of projects that is written in ARM.</p>
+              <p class="proj-descrip" style = "font-size: 11px; color: white"><i>Built By: ModelSim, CPULator</i></p>
+              <p class="proj-descrip" style = "font-size: 11px; color:#878a8d">https://github.com/AbishaKugathasan/ECE243-Labs</p>
+            </a>
+            </span>
+
+            <!--Project 4 -->
+            <span class="exp-card">
+              <a href="https://github.com/AbishaKugathasan/Beans-Counter-Game" target="_blank">
+              <h3 style = "font-family: Lora; text-align: left;">Bean Counter 🎮</h3>
+              <p class="proj-descrip">Game where player dodges obstacles to load a truck.</p>
+              <p class="proj-descrip" style = "font-size: 11px; color: white"><i>Built By: C, ModelSim</i></p>
+              <p class="proj-descrip" style = "font-size: 11px; color:#878a8d">https://github.com/AbishaKugathasan/Beans-Counter-Game</p>
+            </a>
+            </span>
+
+            <!--Project 5 -->
+            <span class="exp-card">
+              <a href="https://github.com/AbishaKugathasan/MarioPizzeria" target="_blank">
+              <h3 style = "font-family: Lora; text-align: left;">Mario's Pizzeria 🍕</h3>
+              <p class="proj-descrip">Game where player makes a pizza according to customer's orders.</p>
+              <p class="proj-descrip" style = "font-size: 11px; color: white"><i>Built By: C, ModelSim</i></p>
+              <p class="proj-descrip" style = "font-size: 11px; color:#878a8d">https://github.com/AbishaKugathasan/MarioPizzeria</p>
+            </a>
+            </span>
+
+
+            <!--Project 6 -->
+            <span class="exp-card">
+              <a href="https://github.com/AbishaKugathasan/MLHFellowshipProject" target="_blank">
+              <h3 style = "font-family: Lora; text-align: left;">Personal Portfolio</h3>
+              <p class="proj-descrip">Showcases my interests, education, experience etc.</p>
+              <p class="proj-descrip" style = "font-size: 11px; color: white"><i>Built By: Python, Flask, JS</i></p>
+              <p class="proj-descrip" style = "font-size: 11px; color:#878a8d">https://github.com/AbishaKugathasan/MLHFellowshipProject</p>
+            </a>
+            </span>
+
+            <!--Project 7-->
+            <span class="exp-card">
+              <a href="https://devpost.com/software/branched-out" target="_blank">
+              <h3 style = "font-family: Lora; text-align: left;">WeGrowth 🌳</h3>
+              <p class="proj-descrip">Environmental Children's app that resembles flappy bird</p>
+              <p class="proj-descrip" style = "font-size: 11px; color: white"><i>Built By: C, CMake, CSS</i></p>
+              <p class="proj-descrip" style = "font-size: 11px; color:#878a8d">https://devpost.com/software/branched-out</p>
+            </a>
+            </span>
+
+
+
           </span>
         </div><br>
 
@@ -183,7 +259,8 @@ fetchNASAData()
       <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center;"><u>My Adventures</u></h1>
       <p style = "text-align: center; font-family: Lora;"><i><a id = "resume-pdf" href = ".\static\img\software-engineer-resume-example.pdf" download = "newfilename">Click here to download my resume</a></i></p> 
       <span class="exp-cards">
-        {% for exp in experiences %}
+     
+        <!--TEMPLATE FOR EXPERIENCES
         <span class="exp-card" >
           <h3 style = "font-family: Lora; text-align: center;">{{ exp.name }}</h3>
           <p style = "color: #6b6e70;">
@@ -192,7 +269,54 @@ fetchNASAData()
             {% endfor %}
           </p>
         </span>
-        {% endfor %}
+        -->
+
+        <span class="exp-card" >
+          <h3 style = "font-family: Lora; text-align: center;">UofT Robotics Association 🤖</h3>
+          <p style = "color: #6b6e70;">
+            <p style = "text-align: center;">Team Member</p> 
+            <p style = "text-align: center;">Present</p> 
+          </p>
+        </span>
+
+
+        <span class="exp-card" >
+          <h3 style = "font-family: Lora; text-align: center;">Meta x MLH Fellowship 🖥️</h3>
+          <p style = "color: #6b6e70;">
+            <p style = "text-align: center;">Fellow</p> 
+            <p style = "text-align: center;">Present</p> 
+          </p>
+        </span>
+
+
+        <span class="exp-card" >
+          <h3 style = "font-family: Lora; text-align: center;">UofT West Wall Project</h3>
+          <p style = "color: #6b6e70;">
+            <p style = "text-align: center;">Engineering Team</p> 
+            <p style = "text-align: center;">Jan 2020 - June 2020</p> 
+          </p>
+        </span>
+
+
+
+        <span class="exp-card" >
+          <h3 style = "font-family: Lora; text-align: center;">UofT EngSoc</h3>
+          <p style = "color: #6b6e70;">
+            <p style = "text-align: center;">Web Developer</p> 
+            <p style = "text-align: center;">Sept 2022</p> 
+          </p>
+        </span>
+
+
+        <span class="exp-card" >
+          <h3 style = "font-family: Lora; text-align: center;">UofT EngSoc</h3>
+          <p style = "color: #6b6e70;">
+            <p style = "text-align: center;">Frosh Leedur</p> 
+            <p style = "text-align: center;">Present</p> 
+          </p>
+        </span>
+
+   
       </span>
     </div>
 
@@ -290,7 +414,8 @@ fetchNASAData()
     <div id="hobbies" class="hobbies-section">
       <h1 style = "font-family: Arbutus Slab; font-size: 50px;   text-align: center; color: white"><u><a href="{{ url_for('hobbies') }}">My Hobbies</a></u></h1>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        {% for pol in polaroids %}
+      
+        <!-- TEMPLATE - PICTURES
         <div class="polaroid">
           <a
             class="caption"
@@ -305,7 +430,56 @@ fetchNASAData()
             />
           </a>
         </div>
-        {% endfor %}
+         -->
+
+        <div class="polaroid">
+          <a
+            class="caption"
+            href="#"
+            style="font-size: 1px"
+            title="swimming"
+          >
+            <img
+              height="250"
+              src="https://i.pinimg.com/736x/54/2d/e8/542de8a80f8a4c58cf42e37ee88f8ee9.jpg"
+              alt="Santorini"
+            />
+          </a>
+        </div>
+
+
+
+        <div class="polaroid">
+          <a
+            class="caption"
+            href="#"
+            style="font-size: 1px"
+            title="Hiking"
+          >
+            <img
+              height="250"
+              src=".\R.jpg"
+              alt="Santorini"
+            />
+          </a>
+        </div>
+
+        <div class="polaroid">
+          <a
+            class="Tennis"
+            href="#"
+            style="font-size: 1px"
+            title="Hiking"
+          >
+            <img
+              height="250"
+              src="https://i.pinimg.com/564x/e3/84/fb/e384fbdab133e1237f5e6d8af6ad5df2--spring-style-sporty.jpg"
+              alt="Santorini"
+            />
+          </a>
+        </div>
+
+        
       </div>
       </div>
 
