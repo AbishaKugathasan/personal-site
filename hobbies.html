@@ -3,6 +3,7 @@
 
 <head>
     <!-- Required meta tags -->
+    <link rel="stylesheet" href="main.css"> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:title" content="Personal Portfolio">
@@ -14,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
-    <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
+    <link lang='sass' rel="stylesheet" href="../static/styles/main.css">
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title>{{ title }</title>
 </head>
@@ -31,9 +32,27 @@
 </nav>
 
 <body class="max-width">
-    <h1> Hobbies</h1>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-       
+  <h1 style="color:white"> Hobbies</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+      
+        <!-- TEMPLATE - PICTURES
+        <div class="polaroid">
+          <a
+            class="caption"
+            href="#"
+            style="font-size: 1px"
+            title="{{ pol.caption }}"
+          >
+            <img
+              height="250"
+              src="{{ pol.pic }}"
+              alt="Santorini"
+            />
+          </a>
+        </div>
+         -->
+
         <div class="polaroid">
           <a
             class="caption"
@@ -80,6 +99,9 @@
             />
           </a>
         </div>
+
+        
+      </div>
   
       </div>
 </body>
